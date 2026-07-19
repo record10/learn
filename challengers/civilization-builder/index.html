@@ -1,0 +1,338 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><meta name="description" content="Gamified learning platform for ages 3-16"><meta name="theme-color" content="#4f46e5"><link rel="canonical" href="https://learn.record10.com/challengers/civilization-builder/"><meta name="generator" content="Astro v7.1.1"><!-- Open Graph / Facebook --><meta property="og:type" content="website"><meta property="og:url" content="https://learn.record10.com/challengers/civilization-builder/"><meta property="og:title" content="Civilization Builder | Record Learn"><meta property="og:description" content="Gamified learning platform for ages 3-16"><meta property="og:image" content="https://learn.record10.com/favicon.svg"><!-- Twitter --><meta property="twitter:card" content="summary_large_image"><meta property="twitter:url" content="https://learn.record10.com/challengers/civilization-builder/"><meta property="twitter:title" content="Civilization Builder | Record Learn"><meta property="twitter:description" content="Gamified learning platform for ages 3-16"><meta property="twitter:image" content="https://learn.record10.com/favicon.svg"><link rel="manifest" href="/manifest.json"><!-- Google Material Symbols (self-hosted) --><link rel="icon" type="image/svg+xml" href="/favicon.svg"><title>Civilization Builder | Record Learn | Record Learn</title><meta name="astro-view-transitions-enabled" content="true"><meta name="astro-view-transitions-fallback" content="animate"><script type="module" src="/assets/ClientRouter.astro_astro_type_script_index_0_lang.6Spq5I16.js"></script><!-- Prevent flash of wrong theme --><script>
+      // Apply theme on initial load
+      (function () {
+        const theme =
+          localStorage.getItem('theme') ||
+          (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
+        if (theme === 'dark') {
+          document.documentElement.classList.add('dark');
+        }
+      })();
+
+      // Preserve theme during View Transitions
+      document.addEventListener('astro:before-swap', (event) => {
+        const isDark = document.documentElement.classList.contains('dark');
+        if (isDark) {
+          event.newDocument.documentElement.classList.add('dark');
+        }
+      });
+
+      // Re-apply theme after swap (safety net)
+      document.addEventListener('astro:after-swap', () => {
+        const theme = localStorage.getItem('theme');
+        if (theme === 'dark') {
+          document.documentElement.classList.add('dark');
+        } else if (theme === 'light') {
+          document.documentElement.classList.remove('dark');
+        }
+      });
+    </script><link rel="stylesheet" href="/assets/Nav.Di0ZGAG-.css"><style>.resource-card[data-astro-cid-3dpd42hu]{border-width:1px;border-radius:1rem;padding:1rem;transition-property:all;transition-duration:.15s;transition-timing-function:cubic-bezier(.4,0,.2,1)}
+</style><style>[data-astro-transition-scope="astro-l25zdozq-1"] { view-transition-name: logo; }@layer astro { ::view-transition-old(logo) { 
+	animation-duration: 180ms;
+	animation-timing-function: cubic-bezier(0.76, 0, 0.24, 1);
+	animation-fill-mode: both;
+	animation-name: astroFadeOut; }::view-transition-new(logo) { 
+	animation-duration: 180ms;
+	animation-timing-function: cubic-bezier(0.76, 0, 0.24, 1);
+	animation-fill-mode: both;
+	animation-name: astroFadeIn; }[data-astro-transition=back]::view-transition-old(logo) { 
+	animation-duration: 180ms;
+	animation-timing-function: cubic-bezier(0.76, 0, 0.24, 1);
+	animation-fill-mode: both;
+	animation-name: astroFadeOut; }[data-astro-transition=back]::view-transition-new(logo) { 
+	animation-duration: 180ms;
+	animation-timing-function: cubic-bezier(0.76, 0, 0.24, 1);
+	animation-fill-mode: both;
+	animation-name: astroFadeIn; } }[data-astro-transition-fallback="old"] [data-astro-transition-scope="astro-l25zdozq-1"],
+			[data-astro-transition-fallback="old"][data-astro-transition-scope="astro-l25zdozq-1"] { 
+	animation-duration: 180ms;
+	animation-timing-function: cubic-bezier(0.76, 0, 0.24, 1);
+	animation-fill-mode: both;
+	animation-name: astroFadeOut; }[data-astro-transition-fallback="new"] [data-astro-transition-scope="astro-l25zdozq-1"],
+			[data-astro-transition-fallback="new"][data-astro-transition-scope="astro-l25zdozq-1"] { 
+	animation-duration: 180ms;
+	animation-timing-function: cubic-bezier(0.76, 0, 0.24, 1);
+	animation-fill-mode: both;
+	animation-name: astroFadeIn; }[data-astro-transition=back][data-astro-transition-fallback="old"] [data-astro-transition-scope="astro-l25zdozq-1"],
+			[data-astro-transition=back][data-astro-transition-fallback="old"][data-astro-transition-scope="astro-l25zdozq-1"] { 
+	animation-duration: 180ms;
+	animation-timing-function: cubic-bezier(0.76, 0, 0.24, 1);
+	animation-fill-mode: both;
+	animation-name: astroFadeOut; }[data-astro-transition=back][data-astro-transition-fallback="new"] [data-astro-transition-scope="astro-l25zdozq-1"],
+			[data-astro-transition=back][data-astro-transition-fallback="new"][data-astro-transition-scope="astro-l25zdozq-1"] { 
+	animation-duration: 180ms;
+	animation-timing-function: cubic-bezier(0.76, 0, 0.24, 1);
+	animation-fill-mode: both;
+	animation-name: astroFadeIn; }</style><style>[data-astro-transition-scope="astro-ss5qawsi-2"] { view-transition-name: nav-explorers; }@layer astro { ::view-transition-old(nav-explorers) { 
+	animation-duration: 180ms;
+	animation-timing-function: cubic-bezier(0.76, 0, 0.24, 1);
+	animation-fill-mode: both;
+	animation-name: astroFadeOut; }::view-transition-new(nav-explorers) { 
+	animation-duration: 180ms;
+	animation-timing-function: cubic-bezier(0.76, 0, 0.24, 1);
+	animation-fill-mode: both;
+	animation-name: astroFadeIn; }[data-astro-transition=back]::view-transition-old(nav-explorers) { 
+	animation-duration: 180ms;
+	animation-timing-function: cubic-bezier(0.76, 0, 0.24, 1);
+	animation-fill-mode: both;
+	animation-name: astroFadeOut; }[data-astro-transition=back]::view-transition-new(nav-explorers) { 
+	animation-duration: 180ms;
+	animation-timing-function: cubic-bezier(0.76, 0, 0.24, 1);
+	animation-fill-mode: both;
+	animation-name: astroFadeIn; } }[data-astro-transition-fallback="old"] [data-astro-transition-scope="astro-ss5qawsi-2"],
+			[data-astro-transition-fallback="old"][data-astro-transition-scope="astro-ss5qawsi-2"] { 
+	animation-duration: 180ms;
+	animation-timing-function: cubic-bezier(0.76, 0, 0.24, 1);
+	animation-fill-mode: both;
+	animation-name: astroFadeOut; }[data-astro-transition-fallback="new"] [data-astro-transition-scope="astro-ss5qawsi-2"],
+			[data-astro-transition-fallback="new"][data-astro-transition-scope="astro-ss5qawsi-2"] { 
+	animation-duration: 180ms;
+	animation-timing-function: cubic-bezier(0.76, 0, 0.24, 1);
+	animation-fill-mode: both;
+	animation-name: astroFadeIn; }[data-astro-transition=back][data-astro-transition-fallback="old"] [data-astro-transition-scope="astro-ss5qawsi-2"],
+			[data-astro-transition=back][data-astro-transition-fallback="old"][data-astro-transition-scope="astro-ss5qawsi-2"] { 
+	animation-duration: 180ms;
+	animation-timing-function: cubic-bezier(0.76, 0, 0.24, 1);
+	animation-fill-mode: both;
+	animation-name: astroFadeOut; }[data-astro-transition=back][data-astro-transition-fallback="new"] [data-astro-transition-scope="astro-ss5qawsi-2"],
+			[data-astro-transition=back][data-astro-transition-fallback="new"][data-astro-transition-scope="astro-ss5qawsi-2"] { 
+	animation-duration: 180ms;
+	animation-timing-function: cubic-bezier(0.76, 0, 0.24, 1);
+	animation-fill-mode: both;
+	animation-name: astroFadeIn; }</style><style>[data-astro-transition-scope="astro-ss5qawsi-3"] { view-transition-name: nav-adventurers; }@layer astro { ::view-transition-old(nav-adventurers) { 
+	animation-duration: 180ms;
+	animation-timing-function: cubic-bezier(0.76, 0, 0.24, 1);
+	animation-fill-mode: both;
+	animation-name: astroFadeOut; }::view-transition-new(nav-adventurers) { 
+	animation-duration: 180ms;
+	animation-timing-function: cubic-bezier(0.76, 0, 0.24, 1);
+	animation-fill-mode: both;
+	animation-name: astroFadeIn; }[data-astro-transition=back]::view-transition-old(nav-adventurers) { 
+	animation-duration: 180ms;
+	animation-timing-function: cubic-bezier(0.76, 0, 0.24, 1);
+	animation-fill-mode: both;
+	animation-name: astroFadeOut; }[data-astro-transition=back]::view-transition-new(nav-adventurers) { 
+	animation-duration: 180ms;
+	animation-timing-function: cubic-bezier(0.76, 0, 0.24, 1);
+	animation-fill-mode: both;
+	animation-name: astroFadeIn; } }[data-astro-transition-fallback="old"] [data-astro-transition-scope="astro-ss5qawsi-3"],
+			[data-astro-transition-fallback="old"][data-astro-transition-scope="astro-ss5qawsi-3"] { 
+	animation-duration: 180ms;
+	animation-timing-function: cubic-bezier(0.76, 0, 0.24, 1);
+	animation-fill-mode: both;
+	animation-name: astroFadeOut; }[data-astro-transition-fallback="new"] [data-astro-transition-scope="astro-ss5qawsi-3"],
+			[data-astro-transition-fallback="new"][data-astro-transition-scope="astro-ss5qawsi-3"] { 
+	animation-duration: 180ms;
+	animation-timing-function: cubic-bezier(0.76, 0, 0.24, 1);
+	animation-fill-mode: both;
+	animation-name: astroFadeIn; }[data-astro-transition=back][data-astro-transition-fallback="old"] [data-astro-transition-scope="astro-ss5qawsi-3"],
+			[data-astro-transition=back][data-astro-transition-fallback="old"][data-astro-transition-scope="astro-ss5qawsi-3"] { 
+	animation-duration: 180ms;
+	animation-timing-function: cubic-bezier(0.76, 0, 0.24, 1);
+	animation-fill-mode: both;
+	animation-name: astroFadeOut; }[data-astro-transition=back][data-astro-transition-fallback="new"] [data-astro-transition-scope="astro-ss5qawsi-3"],
+			[data-astro-transition=back][data-astro-transition-fallback="new"][data-astro-transition-scope="astro-ss5qawsi-3"] { 
+	animation-duration: 180ms;
+	animation-timing-function: cubic-bezier(0.76, 0, 0.24, 1);
+	animation-fill-mode: both;
+	animation-name: astroFadeIn; }</style><style>[data-astro-transition-scope="astro-ss5qawsi-4"] { view-transition-name: nav-builders; }@layer astro { ::view-transition-old(nav-builders) { 
+	animation-duration: 180ms;
+	animation-timing-function: cubic-bezier(0.76, 0, 0.24, 1);
+	animation-fill-mode: both;
+	animation-name: astroFadeOut; }::view-transition-new(nav-builders) { 
+	animation-duration: 180ms;
+	animation-timing-function: cubic-bezier(0.76, 0, 0.24, 1);
+	animation-fill-mode: both;
+	animation-name: astroFadeIn; }[data-astro-transition=back]::view-transition-old(nav-builders) { 
+	animation-duration: 180ms;
+	animation-timing-function: cubic-bezier(0.76, 0, 0.24, 1);
+	animation-fill-mode: both;
+	animation-name: astroFadeOut; }[data-astro-transition=back]::view-transition-new(nav-builders) { 
+	animation-duration: 180ms;
+	animation-timing-function: cubic-bezier(0.76, 0, 0.24, 1);
+	animation-fill-mode: both;
+	animation-name: astroFadeIn; } }[data-astro-transition-fallback="old"] [data-astro-transition-scope="astro-ss5qawsi-4"],
+			[data-astro-transition-fallback="old"][data-astro-transition-scope="astro-ss5qawsi-4"] { 
+	animation-duration: 180ms;
+	animation-timing-function: cubic-bezier(0.76, 0, 0.24, 1);
+	animation-fill-mode: both;
+	animation-name: astroFadeOut; }[data-astro-transition-fallback="new"] [data-astro-transition-scope="astro-ss5qawsi-4"],
+			[data-astro-transition-fallback="new"][data-astro-transition-scope="astro-ss5qawsi-4"] { 
+	animation-duration: 180ms;
+	animation-timing-function: cubic-bezier(0.76, 0, 0.24, 1);
+	animation-fill-mode: both;
+	animation-name: astroFadeIn; }[data-astro-transition=back][data-astro-transition-fallback="old"] [data-astro-transition-scope="astro-ss5qawsi-4"],
+			[data-astro-transition=back][data-astro-transition-fallback="old"][data-astro-transition-scope="astro-ss5qawsi-4"] { 
+	animation-duration: 180ms;
+	animation-timing-function: cubic-bezier(0.76, 0, 0.24, 1);
+	animation-fill-mode: both;
+	animation-name: astroFadeOut; }[data-astro-transition=back][data-astro-transition-fallback="new"] [data-astro-transition-scope="astro-ss5qawsi-4"],
+			[data-astro-transition=back][data-astro-transition-fallback="new"][data-astro-transition-scope="astro-ss5qawsi-4"] { 
+	animation-duration: 180ms;
+	animation-timing-function: cubic-bezier(0.76, 0, 0.24, 1);
+	animation-fill-mode: both;
+	animation-name: astroFadeIn; }</style><style>[data-astro-transition-scope="astro-ss5qawsi-5"] { view-transition-name: nav-challengers; }@layer astro { ::view-transition-old(nav-challengers) { 
+	animation-duration: 180ms;
+	animation-timing-function: cubic-bezier(0.76, 0, 0.24, 1);
+	animation-fill-mode: both;
+	animation-name: astroFadeOut; }::view-transition-new(nav-challengers) { 
+	animation-duration: 180ms;
+	animation-timing-function: cubic-bezier(0.76, 0, 0.24, 1);
+	animation-fill-mode: both;
+	animation-name: astroFadeIn; }[data-astro-transition=back]::view-transition-old(nav-challengers) { 
+	animation-duration: 180ms;
+	animation-timing-function: cubic-bezier(0.76, 0, 0.24, 1);
+	animation-fill-mode: both;
+	animation-name: astroFadeOut; }[data-astro-transition=back]::view-transition-new(nav-challengers) { 
+	animation-duration: 180ms;
+	animation-timing-function: cubic-bezier(0.76, 0, 0.24, 1);
+	animation-fill-mode: both;
+	animation-name: astroFadeIn; } }[data-astro-transition-fallback="old"] [data-astro-transition-scope="astro-ss5qawsi-5"],
+			[data-astro-transition-fallback="old"][data-astro-transition-scope="astro-ss5qawsi-5"] { 
+	animation-duration: 180ms;
+	animation-timing-function: cubic-bezier(0.76, 0, 0.24, 1);
+	animation-fill-mode: both;
+	animation-name: astroFadeOut; }[data-astro-transition-fallback="new"] [data-astro-transition-scope="astro-ss5qawsi-5"],
+			[data-astro-transition-fallback="new"][data-astro-transition-scope="astro-ss5qawsi-5"] { 
+	animation-duration: 180ms;
+	animation-timing-function: cubic-bezier(0.76, 0, 0.24, 1);
+	animation-fill-mode: both;
+	animation-name: astroFadeIn; }[data-astro-transition=back][data-astro-transition-fallback="old"] [data-astro-transition-scope="astro-ss5qawsi-5"],
+			[data-astro-transition=back][data-astro-transition-fallback="old"][data-astro-transition-scope="astro-ss5qawsi-5"] { 
+	animation-duration: 180ms;
+	animation-timing-function: cubic-bezier(0.76, 0, 0.24, 1);
+	animation-fill-mode: both;
+	animation-name: astroFadeOut; }[data-astro-transition=back][data-astro-transition-fallback="new"] [data-astro-transition-scope="astro-ss5qawsi-5"],
+			[data-astro-transition=back][data-astro-transition-fallback="new"][data-astro-transition-scope="astro-ss5qawsi-5"] { 
+	animation-duration: 180ms;
+	animation-timing-function: cubic-bezier(0.76, 0, 0.24, 1);
+	animation-fill-mode: both;
+	animation-name: astroFadeIn; }</style><style>[data-astro-transition-scope="astro-ss5qawsi-6"] { view-transition-name: nav-pioneers; }@layer astro { ::view-transition-old(nav-pioneers) { 
+	animation-duration: 180ms;
+	animation-timing-function: cubic-bezier(0.76, 0, 0.24, 1);
+	animation-fill-mode: both;
+	animation-name: astroFadeOut; }::view-transition-new(nav-pioneers) { 
+	animation-duration: 180ms;
+	animation-timing-function: cubic-bezier(0.76, 0, 0.24, 1);
+	animation-fill-mode: both;
+	animation-name: astroFadeIn; }[data-astro-transition=back]::view-transition-old(nav-pioneers) { 
+	animation-duration: 180ms;
+	animation-timing-function: cubic-bezier(0.76, 0, 0.24, 1);
+	animation-fill-mode: both;
+	animation-name: astroFadeOut; }[data-astro-transition=back]::view-transition-new(nav-pioneers) { 
+	animation-duration: 180ms;
+	animation-timing-function: cubic-bezier(0.76, 0, 0.24, 1);
+	animation-fill-mode: both;
+	animation-name: astroFadeIn; } }[data-astro-transition-fallback="old"] [data-astro-transition-scope="astro-ss5qawsi-6"],
+			[data-astro-transition-fallback="old"][data-astro-transition-scope="astro-ss5qawsi-6"] { 
+	animation-duration: 180ms;
+	animation-timing-function: cubic-bezier(0.76, 0, 0.24, 1);
+	animation-fill-mode: both;
+	animation-name: astroFadeOut; }[data-astro-transition-fallback="new"] [data-astro-transition-scope="astro-ss5qawsi-6"],
+			[data-astro-transition-fallback="new"][data-astro-transition-scope="astro-ss5qawsi-6"] { 
+	animation-duration: 180ms;
+	animation-timing-function: cubic-bezier(0.76, 0, 0.24, 1);
+	animation-fill-mode: both;
+	animation-name: astroFadeIn; }[data-astro-transition=back][data-astro-transition-fallback="old"] [data-astro-transition-scope="astro-ss5qawsi-6"],
+			[data-astro-transition=back][data-astro-transition-fallback="old"][data-astro-transition-scope="astro-ss5qawsi-6"] { 
+	animation-duration: 180ms;
+	animation-timing-function: cubic-bezier(0.76, 0, 0.24, 1);
+	animation-fill-mode: both;
+	animation-name: astroFadeOut; }[data-astro-transition=back][data-astro-transition-fallback="new"] [data-astro-transition-scope="astro-ss5qawsi-6"],
+			[data-astro-transition=back][data-astro-transition-fallback="new"][data-astro-transition-scope="astro-ss5qawsi-6"] { 
+	animation-duration: 180ms;
+	animation-timing-function: cubic-bezier(0.76, 0, 0.24, 1);
+	animation-fill-mode: both;
+	animation-name: astroFadeIn; }</style></head><body class="min-h-screen transition-colors duration-300"><header class="sticky top-0 z-50 header-blur border-b"><div class="container"><nav class="flex items-center justify-between gap-3 sm:gap-6 py-3"><div class="flex items-center gap-3"><a href="/challengers/" class="flex items-center gap-2 px-3 py-1.5 rounded-full bg-zinc-100 dark:bg-zinc-800 hover:bg-zinc-200 dark:hover:bg-zinc-700 text-zinc-600 dark:text-zinc-300 transition-all hover:-translate-x-1 group animate-in slide-in-from-left-4 fade-in duration-300"><span class="material-symbols-outlined text-xl group-hover:scale-110 transition-transform" aria-hidden="true">arrow_back</span><span class="text-sm font-bold hidden sm:inline">Back</span></a><a data-astro-transition-scope="astro-l25zdozq-1" href="/" class="flex items-center text-2xl font-black uppercase tracking-tighter hover:opacity-80 transition-opacity"><span class="text-indigo-600 dark:text-indigo-400">RL</span></a></div><div class="hidden lg:flex items-center gap-2"><a data-astro-transition-scope="astro-ss5qawsi-2" href="/explorers/" class="nav-btn transition-all duration-300 border flex-col !py-1.5 !px-3 border-pink-200 dark:border-pink-700 hover:scale-105 hover:bg-gradient-to-r from-pink-50 to-rose-50 dark:from-pink-900/50 dark:to-rose-900/50 bg-white dark:bg-zinc-900"><div class="flex items-center gap-1.5"><span class="material-symbols-outlined text-base text-pink-500 " aria-hidden="true">star</span><span class="font-semibold text-xs xl:text-sm text-pink-600 dark:text-pink-400">Explorers</span></div><span class="text-[10px] text-zinc-500 dark:text-zinc-400 leading-tight hidden xl:block">3-5 Years</span></a><a data-astro-transition-scope="astro-ss5qawsi-3" href="/adventurers/" class="nav-btn transition-all duration-300 border flex-col !py-1.5 !px-3 border-sky-200 dark:border-sky-700 hover:scale-105 hover:bg-gradient-to-r from-sky-50 to-cyan-50 dark:from-sky-900/50 dark:to-cyan-900/50 bg-white dark:bg-zinc-900"><div class="flex items-center gap-1.5"><span class="material-symbols-outlined text-base text-sky-500 " aria-hidden="true">rocket_launch</span><span class="font-semibold text-xs xl:text-sm text-sky-600 dark:text-sky-400">Adventurers</span></div><span class="text-[10px] text-zinc-500 dark:text-zinc-400 leading-tight hidden xl:block">6-8 Years</span></a><a data-astro-transition-scope="astro-ss5qawsi-4" href="/builders/" class="nav-btn transition-all duration-300 border flex-col !py-1.5 !px-3 border-green-200 dark:border-green-700 hover:scale-105 hover:bg-gradient-to-r from-green-50 to-emerald-50 dark:from-green-900/50 dark:to-emerald-900/50 bg-white dark:bg-zinc-900"><div class="flex items-center gap-1.5"><span class="material-symbols-outlined text-base text-green-500 " aria-hidden="true">build</span><span class="font-semibold text-xs xl:text-sm text-green-600 dark:text-green-400">Builders</span></div><span class="text-[10px] text-zinc-500 dark:text-zinc-400 leading-tight hidden xl:block">9-11 Years</span></a><a data-astro-transition-scope="astro-ss5qawsi-5" href="/challengers/" class="nav-btn transition-all duration-300 border flex-col !py-1.5 !px-3 border-violet-200 dark:border-violet-700 ring-violet-400 ring-2 scale-105 font-bold bg-gradient-to-r from-violet-50 to-purple-50 dark:from-violet-900/50 dark:to-purple-900/50"><div class="flex items-center gap-1.5"><span class="material-symbols-outlined text-base text-violet-500 animate-bounce-soft" aria-hidden="true">bolt</span><span class="font-semibold text-xs xl:text-sm text-violet-600 dark:text-violet-400">Challengers</span></div><span class="text-[10px] text-zinc-500 dark:text-zinc-400 leading-tight hidden xl:block">12-14 Years</span></a><a data-astro-transition-scope="astro-ss5qawsi-6" href="/pioneers/" class="nav-btn transition-all duration-300 border flex-col !py-1.5 !px-3 border-orange-200 dark:border-orange-700 hover:scale-105 hover:bg-gradient-to-r from-orange-50 to-amber-50 dark:from-orange-900/50 dark:to-amber-900/50 bg-white dark:bg-zinc-900"><div class="flex items-center gap-1.5"><span class="material-symbols-outlined text-base text-orange-500 " aria-hidden="true">flag</span><span class="font-semibold text-xs xl:text-sm text-orange-600 dark:text-orange-400">Pioneers</span></div><span class="text-[10px] text-zinc-500 dark:text-zinc-400 leading-tight hidden xl:block">15-16 Years</span></a></div><div class="flex items-center gap-2 sm:gap-3"><!-- Combined Stats Pill --><div class="flex items-center h-9 sm:h-11 rounded-full overflow-hidden shadow-lg shadow-rose-500/20 hover:scale-105 transition-transform cursor-default select-none"><!-- Love Section --><div class="flex items-center h-full gap-2 px-3 sm:px-4 bg-gradient-to-r from-rose-500 to-pink-500 text-white text-xs sm:text-sm font-semibold" title="Total Love"><span class="text-sm sm:text-lg">❤️</span><span id="love-count">0</span></div><!-- Streak Section --><div class="hidden sm:flex items-center h-full gap-2 px-4 bg-gradient-to-r from-amber-500 to-orange-500 text-white text-sm font-semibold" title="Day Streak"><span class="text-lg animate-pulse">🔥</span><span id="streak-count">0</span></div></div><button id="theme-toggle" class="w-9 h-9 sm:w-11 sm:h-11 rounded-xl flex items-center justify-center bg-zinc-100 dark:bg-zinc-900 border border-zinc-200 dark:border-zinc-700 hover:border-indigo-500 hover:scale-105 transition-all duration-200 cursor-pointer overflow-hidden relative" aria-label="Toggle theme" data-astro-cid-l6lhmie6><span class="theme-sun absolute transition-all duration-300" data-astro-cid-l6lhmie6><span class="material-symbols-outlined text-2xl" aria-hidden="true">light_mode</span></span><span class="theme-moon absolute transition-all duration-300 opacity-0 rotate-[-90deg] scale-50" data-astro-cid-l6lhmie6><span class="material-symbols-outlined text-2xl" aria-hidden="true">dark_mode</span></span></button><script>
+  function initThemeToggle() {
+    const toggle = document.getElementById('theme-toggle');
+    if (!toggle) return;
+
+    const html = document.documentElement;
+
+    const setTheme = (theme) => {
+      html.classList.toggle('dark', theme === 'dark');
+      localStorage.setItem('theme', theme);
+    };
+
+    // Clone to remove old listeners
+    const newToggle = toggle.cloneNode(true);
+    toggle.parentNode.replaceChild(newToggle, toggle);
+
+    newToggle.addEventListener('click', () => {
+      const newTheme = html.classList.contains('dark') ? 'light' : 'dark';
+      setTheme(newTheme);
+    });
+  }
+
+  // Handle both initial load and View Transitions
+  document.addEventListener('DOMContentLoaded', initThemeToggle);
+  document.addEventListener('astro:page-load', initThemeToggle);
+</script><!-- Settings Dropdown --><div class="relative group"><button id="settings-btn" class="w-9 h-9 sm:w-11 sm:h-11 rounded-xl flex items-center justify-center bg-zinc-100 dark:bg-zinc-900 border border-zinc-200 dark:border-zinc-700 hover:border-indigo-500 hover:scale-105 transition-all duration-200 cursor-pointer" aria-label="Settings"><span class="material-symbols-outlined text-xl" aria-hidden="true">settings</span></button><!-- Dropdown Menu --><div class="absolute right-0 top-full mt-2 w-48 bg-white dark:bg-zinc-900 rounded-xl shadow-xl border border-zinc-100 dark:border-zinc-800 p-2 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 transform origin-top-right scale-95 group-hover:scale-100 z-50"><button id="reset-btn" class="w-full flex items-center gap-2 px-3 py-2 text-sm font-medium text-rose-500 hover:bg-rose-50 dark:hover:bg-rose-900/20 rounded-lg transition-colors"><span class="material-symbols-outlined text-xl" aria-hidden="true">refresh</span>Reset Progress</button></div></div></div></nav></div></header><script>
+  function initNav() {
+    const loveCount = document.getElementById('love-count');
+    const streakCount = document.getElementById('streak-count');
+    const resetBtn = document.getElementById('reset-btn');
+
+    // Read from localStorage directly (nanostores persistent format)
+    const getProgress = () => {
+      try {
+        const completed = JSON.parse(localStorage.getItem('userProgress:completed') || '[]');
+        const streak = parseInt(localStorage.getItem('userProgress:streak') || '3');
+        return { completed, streak };
+      } catch {
+        return { completed: [], streak: 3 };
+      }
+    };
+
+    // Update UI
+    const updateUI = () => {
+      const progress = getProgress();
+      if (loveCount) {
+        // Each activity is worth 50 love
+        const score = progress.completed.length * 50;
+        loveCount.textContent = score.toString();
+      }
+      if (streakCount) {
+        streakCount.textContent = progress.streak.toString();
+      }
+    };
+
+    // Initial update
+    updateUI();
+
+    // Listen for storage changes (when other tabs or scripts update)
+    window.addEventListener('storage', updateUI);
+
+    // Also update on custom event (when activities are completed in the same tab)
+    window.addEventListener('progress-updated', updateUI);
+
+    // Reset Logic - clone to remove old listeners
+    if (resetBtn) {
+      const newResetBtn = resetBtn.cloneNode(true);
+      resetBtn.parentNode.replaceChild(newResetBtn, resetBtn);
+
+      newResetBtn.addEventListener('click', () => {
+        if (confirm('Are you sure you want to reset all progress? This cannot be undone.')) {
+          localStorage.setItem('userProgress:completed', '[]');
+          localStorage.setItem('userProgress:streak', '3');
+          localStorage.setItem('userProgress:unlocked', '["colors","colors-flashcards"]');
+          window.location.reload();
+        }
+      });
+    }
+  }
+
+  // Handle both initial load and View Transitions
+  document.addEventListener('DOMContentLoaded', initNav);
+  document.addEventListener('astro:page-load', initNav);
+</script><main class="min-h-screen py-8 pb-32 relative overflow-hidden bg-stone-100 dark:bg-stone-950" data-astro-cid-3dpd42hu><!-- Parchment texture effect --><div class="absolute inset-0 opacity-40 pointer-events-none mix-blend-multiply dark:mix-blend-overlay" style="background-image: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI0IiBoZWlnaHQ9IjQiPgo8cmVjdCB3aWR0aD0iNCIgaGVpZ2h0PSI0IiBmaWxsPSIjZjVmNWI1Ii8+CjxwYXRoIGQ9Ik0wIDBoNHY0SDB6IiBmaWxsPSIjZTZlMmQzIiBmaWxsLW9wYWNpdHk9Ii41Ii8+Cjwvc3ZnPg==');" data-astro-cid-3dpd42hu></div><div class="container mx-auto px-4 relative max-w-4xl" data-astro-cid-3dpd42hu><div class="game-container w-full" data-id="civilization-builder" data-scenarios="[{&quot;id&quot;:&quot;egypt&quot;,&quot;name&quot;:&quot;Ancient Egypt&quot;,&quot;era&quot;:&quot;2500 BCE&quot;,&quot;description&quot;:&quot;The Nile floods annually. Harness its power to feed your people and build a monument that will last forever.&quot;,&quot;wonder&quot;:&quot;The Great Pyramid&quot;,&quot;startResources&quot;:{&quot;food&quot;:50,&quot;materials&quot;:20,&quot;knowledge&quot;:10},&quot;goalResources&quot;:{&quot;food&quot;:200,&quot;materials&quot;:150,&quot;knowledge&quot;:100}},{&quot;id&quot;:&quot;rome&quot;,&quot;name&quot;:&quot;Roman Republic&quot;,&quot;era&quot;:&quot;100 BCE&quot;,&quot;description&quot;:&quot;Expand your territory and infrastructure. Balance military might with engineering marvels.&quot;,&quot;wonder&quot;:&quot;The Colosseum&quot;,&quot;startResources&quot;:{&quot;food&quot;:40,&quot;materials&quot;:40,&quot;knowledge&quot;:30},&quot;goalResources&quot;:{&quot;food&quot;:150,&quot;materials&quot;:200,&quot;knowledge&quot;:150}}]" data-events="[{&quot;title&quot;:&quot;Nile Flooding&quot;,&quot;text&quot;:&quot;The Nile river is rising. How do we prepare?&quot;,&quot;choices&quot;:[{&quot;label&quot;:&quot;Dig irrigation canals&quot;,&quot;cost&quot;:{&quot;materials&quot;:10},&quot;effect&quot;:{&quot;food&quot;:40,&quot;knowledge&quot;:5},&quot;message&quot;:&quot;Canals distribute water efficiently! Food production booms.&quot;},{&quot;label&quot;:&quot;Build higher levees&quot;,&quot;cost&quot;:{&quot;materials&quot;:15},&quot;effect&quot;:{&quot;materials&quot;:-5,&quot;food&quot;:10},&quot;message&quot;:&quot;The levees hold, but water doesn't reach far fields.&quot;},{&quot;label&quot;:&quot;Pray to Hapi&quot;,&quot;effect&quot;:{&quot;knowledge&quot;:20,&quot;food&quot;:-5},&quot;message&quot;:&quot;Spiritual morale is high, but crops still need water.&quot;}]},{&quot;title&quot;:&quot;Trade Expedition&quot;,&quot;text&quot;:&quot;Merchants from Nubia arrive with gold and exotic goods.&quot;,&quot;choices&quot;:[{&quot;label&quot;:&quot;Trade grain for gold&quot;,&quot;cost&quot;:{&quot;food&quot;:20},&quot;effect&quot;:{&quot;materials&quot;:25},&quot;message&quot;:&quot;Our granaries are lighter, but our treasury is full.&quot;},{&quot;label&quot;:&quot;Exchange knowledge&quot;,&quot;cost&quot;:{&quot;knowledge&quot;:5},&quot;effect&quot;:{&quot;knowledge&quot;:15,&quot;materials&quot;:5},&quot;message&quot;:&quot;We learn new construction techniques.&quot;}]},{&quot;title&quot;:&quot;Pyramid Construction&quot;,&quot;text&quot;:&quot;The Pharaoh demands construction begin on the great monument.&quot;,&quot;choices&quot;:[{&quot;label&quot;:&quot;Draft many workers&quot;,&quot;cost&quot;:{&quot;food&quot;:30},&quot;effect&quot;:{&quot;materials&quot;:30},&quot;message&quot;:&quot;Many hands make light work, but they must be fed.&quot;},{&quot;label&quot;:&quot;Hire skilled architects&quot;,&quot;cost&quot;:{&quot;knowledge&quot;:15},&quot;effect&quot;:{&quot;materials&quot;:10,&quot;knowledge&quot;:10},&quot;message&quot;:&quot;Better planning saves stone in the long run.&quot;}]}]" data-astro-cid-3dpd42hu><!-- Header --><div class="flex flex-col md:flex-row items-center justify-between gap-4 mb-8" data-astro-cid-3dpd42hu><div data-astro-cid-3dpd42hu><div class="flex items-center gap-3 mb-2" data-astro-cid-3dpd42hu><div class="p-2 bg-amber-100 dark:bg-amber-900/50 rounded-lg" data-astro-cid-3dpd42hu><span class="material-symbols-outlined text-amber-700 dark:text-amber-500 text-3xl" data-astro-cid-3dpd42hu>temple_buddhist</span></div><h1 class="text-3xl font-black text-stone-800 dark:text-stone-100 tracking-tight" data-astro-cid-3dpd42hu>Civilization Builder</h1></div><p class="text-stone-600 dark:text-stone-400 font-medium" data-astro-cid-3dpd42hu>Lead your empire through history</p></div><div class="flex items-center gap-3 bg-white dark:bg-stone-900 p-2 pl-4 pr-2 rounded-2xl shadow-sm border border-stone-200 dark:border-stone-800" data-astro-cid-3dpd42hu><div class="text-right mr-2" data-astro-cid-3dpd42hu><p class="text-xs font-bold text-stone-400 uppercase" data-astro-cid-3dpd42hu>Scenario</p><p id="scenario-name" class="font-bold text-stone-800 dark:text-stone-200" data-astro-cid-3dpd42hu>Loading...</p></div><div class="bg-amber-100 dark:bg-amber-900/30 text-amber-800 dark:text-amber-200 px-3 py-1 rounded-lg font-mono font-bold text-sm" data-astro-cid-3dpd42hu><span id="turn-counter" data-astro-cid-3dpd42hu>Year 1</span></div></div></div><!-- Resources Panel --><div class="grid grid-cols-3 gap-4 mb-8" data-astro-cid-3dpd42hu><!-- Food --><div class="resource-card bg-emerald-50 dark:bg-emerald-900/20 border-emerald-200 dark:border-emerald-800" data-astro-cid-3dpd42hu><div class="flex items-center gap-2 mb-1 text-emerald-700 dark:text-emerald-400" data-astro-cid-3dpd42hu><span class="material-symbols-outlined" data-astro-cid-3dpd42hu>agriculture</span><span class="text-xs font-bold uppercase tracking-wider" data-astro-cid-3dpd42hu>Food</span></div><div class="flex items-end justify-between" data-astro-cid-3dpd42hu><span id="res-food" class="text-3xl font-black text-emerald-800 dark:text-emerald-300" data-astro-cid-3dpd42hu>0</span><span id="goal-food" class="text-xs font-medium text-emerald-600 dark:text-emerald-500 mb-1" data-astro-cid-3dpd42hu>/ 200</span></div><div class="w-full h-2 bg-emerald-200 dark:bg-emerald-900 rounded-full mt-2 overflow-hidden" data-astro-cid-3dpd42hu><div id="bar-food" class="h-full bg-emerald-500 transition-all duration-500" style="width: 0%" data-astro-cid-3dpd42hu></div></div></div><!-- Materials --><div class="resource-card bg-stone-50 dark:bg-stone-800 border-stone-200 dark:border-stone-700" data-astro-cid-3dpd42hu><div class="flex items-center gap-2 mb-1 text-stone-600 dark:text-stone-400" data-astro-cid-3dpd42hu><span class="material-symbols-outlined" data-astro-cid-3dpd42hu>dataset</span><span class="text-xs font-bold uppercase tracking-wider" data-astro-cid-3dpd42hu>Materials</span></div><div class="flex items-end justify-between" data-astro-cid-3dpd42hu><span id="res-materials" class="text-3xl font-black text-stone-700 dark:text-stone-300" data-astro-cid-3dpd42hu>0</span><span id="goal-materials" class="text-xs font-medium text-stone-500 mb-1" data-astro-cid-3dpd42hu>/ 150</span></div><div class="w-full h-2 bg-stone-200 dark:bg-stone-700 rounded-full mt-2 overflow-hidden" data-astro-cid-3dpd42hu><div id="bar-materials" class="h-full bg-amber-600 transition-all duration-500" style="width: 0%" data-astro-cid-3dpd42hu></div></div></div><!-- Knowledge --><div class="resource-card bg-sky-50 dark:bg-sky-900/20 border-sky-200 dark:border-sky-800" data-astro-cid-3dpd42hu><div class="flex items-center gap-2 mb-1 text-sky-700 dark:text-sky-400" data-astro-cid-3dpd42hu><span class="material-symbols-outlined" data-astro-cid-3dpd42hu>school</span><span class="text-xs font-bold uppercase tracking-wider" data-astro-cid-3dpd42hu>Knowledge</span></div><div class="flex items-end justify-between" data-astro-cid-3dpd42hu><span id="res-knowledge" class="text-3xl font-black text-sky-800 dark:text-sky-300" data-astro-cid-3dpd42hu>0</span><span id="goal-knowledge" class="text-xs font-medium text-sky-600 dark:text-sky-500 mb-1" data-astro-cid-3dpd42hu>/ 100</span></div><div class="w-full h-2 bg-sky-200 dark:bg-sky-900 rounded-full mt-2 overflow-hidden" data-astro-cid-3dpd42hu><div id="bar-knowledge" class="h-full bg-sky-500 transition-all duration-500" style="width: 0%" data-astro-cid-3dpd42hu></div></div></div></div><!-- Main Interaction Area --><div class="bg-white dark:bg-stone-900 rounded-3xl p-6 md:p-8 shadow-xl border border-stone-200 dark:border-stone-800 min-h-[400px] flex flex-col items-center justify-center text-center relative overflow-hidden" data-astro-cid-3dpd42hu><!-- Wonder View (Background) --><div id="wonder-progress" class="absolute bottom-0 left-0 right-0 opacity-10 pointer-events-none flex justify-center items-end" data-astro-cid-3dpd42hu><!-- SVG built by code --></div><!-- Event Content --><div id="event-container" class="relative z-10 max-w-2xl w-full transition-all duration-300" data-astro-cid-3dpd42hu><div class="mb-8" data-astro-cid-3dpd42hu><span id="event-tag" class="inline-block px-3 py-1 rounded-full bg-amber-100 dark:bg-amber-900/30 text-amber-800 dark:text-amber-200 text-xs font-bold uppercase tracking-wider mb-4" data-astro-cid-3dpd42hu>Event</span><h2 id="event-title" class="text-3xl font-bold text-stone-800 dark:text-stone-100 mb-4" data-astro-cid-3dpd42hu>Loading...</h2><p id="event-desc" class="text-lg text-stone-600 dark:text-stone-400 leading-relaxed" data-astro-cid-3dpd42hu>History is being written...</p></div><!-- Choices --><div id="choices-container" class="grid grid-cols-1 gap-3" data-astro-cid-3dpd42hu><!-- Generated by JS --></div></div><!-- Turn Result (Hidden by default) --><div id="result-container" class="hidden relative z-10 max-w-2xl w-full" data-astro-cid-3dpd42hu><div class="mb-8" data-astro-cid-3dpd42hu><div id="result-icon" class="w-16 h-16 bg-emerald-100 dark:bg-emerald-900/30 text-emerald-600 dark:text-emerald-400 rounded-full flex items-center justify-center mx-auto mb-4 text-3xl" data-astro-cid-3dpd42hu><span class="material-symbols-outlined" data-astro-cid-3dpd42hu>check</span></div><h2 class="text-2xl font-bold text-stone-800 dark:text-stone-100 mb-2" data-astro-cid-3dpd42hu>Outcome</h2><p id="result-message" class="text-lg text-stone-600 dark:text-stone-400 mb-6" data-astro-cid-3dpd42hu>Result text here...</p><div id="result-changes" class="flex justify-center gap-4 mb-8" data-astro-cid-3dpd42hu><!-- Generated changes --></div></div><button id="next-turn-btn" class="px-8 py-3 bg-stone-800 dark:bg-stone-700 hover:bg-stone-700 text-white rounded-xl font-bold shadow-lg shadow-stone-500/20 transition-all active:scale-95 flex items-center gap-2 mx-auto" data-astro-cid-3dpd42hu><span data-astro-cid-3dpd42hu>Next Year</span><span class="material-symbols-outlined" data-astro-cid-3dpd42hu>arrow_forward</span></button></div></div></div></div></main><script>
+      if ('serviceWorker' in navigator) {
+        // Unregister all service workers to prevent stale content issues
+        navigator.serviceWorker.getRegistrations().then((registrations) => {
+          for (const registration of registrations) {
+            registration.unregister();
+          }
+        });
+      }
+    </script></body></html><script type="module" src="/assets/civilization-builder.astro_astro_type_script_index_0_lang.B5pg8JEg.js"></script>

@@ -1,0 +1,339 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><meta name="description" content="Master the periodic table structure through visual memory!"><meta name="theme-color" content="#4f46e5"><link rel="canonical" href="https://learn.record10.com/challengers/periodic-brainer/"><meta name="generator" content="Astro v7.1.1"><!-- Open Graph / Facebook --><meta property="og:type" content="website"><meta property="og:url" content="https://learn.record10.com/challengers/periodic-brainer/"><meta property="og:title" content="Periodic Brainer"><meta property="og:description" content="Master the periodic table structure through visual memory!"><meta property="og:image" content="https://learn.record10.com/favicon.svg"><!-- Twitter --><meta property="twitter:card" content="summary_large_image"><meta property="twitter:url" content="https://learn.record10.com/challengers/periodic-brainer/"><meta property="twitter:title" content="Periodic Brainer"><meta property="twitter:description" content="Master the periodic table structure through visual memory!"><meta property="twitter:image" content="https://learn.record10.com/favicon.svg"><link rel="manifest" href="/manifest.json"><!-- Google Material Symbols (self-hosted) --><link rel="icon" type="image/svg+xml" href="/favicon.svg"><title>Periodic Brainer | Record Learn</title><meta name="astro-view-transitions-enabled" content="true"><meta name="astro-view-transitions-fallback" content="animate"><script type="module" src="/assets/ClientRouter.astro_astro_type_script_index_0_lang.6Spq5I16.js"></script><!-- Prevent flash of wrong theme --><script>
+      // Apply theme on initial load
+      (function () {
+        const theme =
+          localStorage.getItem('theme') ||
+          (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
+        if (theme === 'dark') {
+          document.documentElement.classList.add('dark');
+        }
+      })();
+
+      // Preserve theme during View Transitions
+      document.addEventListener('astro:before-swap', (event) => {
+        const isDark = document.documentElement.classList.contains('dark');
+        if (isDark) {
+          event.newDocument.documentElement.classList.add('dark');
+        }
+      });
+
+      // Re-apply theme after swap (safety net)
+      document.addEventListener('astro:after-swap', () => {
+        const theme = localStorage.getItem('theme');
+        if (theme === 'dark') {
+          document.documentElement.classList.add('dark');
+        } else if (theme === 'light') {
+          document.documentElement.classList.remove('dark');
+        }
+      });
+    </script><link rel="stylesheet" href="/assets/Nav.Di0ZGAG-.css"><style>.instruction-subtitle[data-astro-cid-rmmxrznl]{color:#0000;background:linear-gradient(90deg,#52525b 0%,#a1a1aa 25%,#52525b 50%,#a1a1aa 75%,#52525b 100%) 0 0/200%;background-clip:text;animation:4s linear infinite shimmer}.dark .instruction-subtitle[data-astro-cid-rmmxrznl]{color:#0000;background:linear-gradient(90deg,#a1a1aa 0%,#f4f4f5 25%,#a1a1aa 50%,#f4f4f5 75%,#a1a1aa 100%) 0 0/200%;background-clip:text}@keyframes shimmer{to{background-position:200%}}
+.grid-cols-18[data-astro-cid-7kxtd62e]{grid-template-columns:repeat(18,minmax(0,1fr))}.element-cell[data-astro-cid-7kxtd62e]{aspect-ratio:1;flex-shrink:0;width:32px;height:32px}@media (width<=640px){.element-cell[data-astro-cid-7kxtd62e]{border-radius:3px;width:24px;height:24px;font-size:.42rem}}#grid-scroll-wrapper[data-astro-cid-7kxtd62e]{scrollbar-width:thin;scrollbar-color:#8b5cf64d transparent}#grid-scroll-wrapper[data-astro-cid-7kxtd62e]::-webkit-scrollbar{height:4px}#grid-scroll-wrapper[data-astro-cid-7kxtd62e]::-webkit-scrollbar-track{background:0 0}#grid-scroll-wrapper[data-astro-cid-7kxtd62e]::-webkit-scrollbar-thumb{background:#8b5cf64d;border-radius:2px}#periodic-grid[data-astro-cid-7kxtd62e]{min-height:120px}.element-card[data-astro-cid-7kxtd62e]{transition:all .3s}.element-card[data-astro-cid-7kxtd62e].selected{transform:scale(1.1);box-shadow:0 0 20px #8b5cf680}.element-card[data-astro-cid-7kxtd62e].placed{opacity:.3;pointer-events:none}.grid-cell[data-astro-cid-7kxtd62e].highlight{animation:.5s ease-in-out infinite alternate pulse-glow}.grid-cell[data-astro-cid-7kxtd62e].correct{animation:.4s ease-out forwards lock-in}@keyframes pulse-glow{0%{box-shadow:0 0 5px #8b5cf64d}to{box-shadow:0 0 15px #8b5cf699}}@keyframes lock-in{0%{transform:scale(1.2)}50%{transform:scale(.9)}to{transform:scale(1)}}.memory-tour[data-astro-cid-7kxtd62e]{z-index:10;outline-offset:2px;animation:1.2s ease-in-out element-focus;position:relative;outline:3px solid #a855f7!important;box-shadow:0 0 25px #a855f7cc,inset 0 0 10px #a855f74d!important}@keyframes element-focus{0%,to{outline-offset:2px;transform:scale(1)}50%{outline-offset:4px;transform:scale(1.15)}}.tooltip-animate[data-astro-cid-7kxtd62e]:not(.hidden){animation:.4s ease-out tooltip-bounce}@keyframes tooltip-bounce{0%{opacity:0;transform:translate(-50%)translateY(10px)scale(.8)}60%{transform:translate(-50%)translateY(-5px)scale(1.05)}to{opacity:1;transform:translate(-50%)translateY(0)scale(1)}}@keyframes blink-success{0%,to{opacity:1}50%{opacity:.3;background-color:#c4b5fd}}.blink-correct[data-astro-cid-7kxtd62e]{animation:.4s ease-in-out 3 blink-success}.element-card[data-astro-cid-7kxtd62e].placed{display:none!important}
+</style><style>[data-astro-transition-scope="astro-l25zdozq-1"] { view-transition-name: logo; }@layer astro { ::view-transition-old(logo) { 
+	animation-duration: 180ms;
+	animation-timing-function: cubic-bezier(0.76, 0, 0.24, 1);
+	animation-fill-mode: both;
+	animation-name: astroFadeOut; }::view-transition-new(logo) { 
+	animation-duration: 180ms;
+	animation-timing-function: cubic-bezier(0.76, 0, 0.24, 1);
+	animation-fill-mode: both;
+	animation-name: astroFadeIn; }[data-astro-transition=back]::view-transition-old(logo) { 
+	animation-duration: 180ms;
+	animation-timing-function: cubic-bezier(0.76, 0, 0.24, 1);
+	animation-fill-mode: both;
+	animation-name: astroFadeOut; }[data-astro-transition=back]::view-transition-new(logo) { 
+	animation-duration: 180ms;
+	animation-timing-function: cubic-bezier(0.76, 0, 0.24, 1);
+	animation-fill-mode: both;
+	animation-name: astroFadeIn; } }[data-astro-transition-fallback="old"] [data-astro-transition-scope="astro-l25zdozq-1"],
+			[data-astro-transition-fallback="old"][data-astro-transition-scope="astro-l25zdozq-1"] { 
+	animation-duration: 180ms;
+	animation-timing-function: cubic-bezier(0.76, 0, 0.24, 1);
+	animation-fill-mode: both;
+	animation-name: astroFadeOut; }[data-astro-transition-fallback="new"] [data-astro-transition-scope="astro-l25zdozq-1"],
+			[data-astro-transition-fallback="new"][data-astro-transition-scope="astro-l25zdozq-1"] { 
+	animation-duration: 180ms;
+	animation-timing-function: cubic-bezier(0.76, 0, 0.24, 1);
+	animation-fill-mode: both;
+	animation-name: astroFadeIn; }[data-astro-transition=back][data-astro-transition-fallback="old"] [data-astro-transition-scope="astro-l25zdozq-1"],
+			[data-astro-transition=back][data-astro-transition-fallback="old"][data-astro-transition-scope="astro-l25zdozq-1"] { 
+	animation-duration: 180ms;
+	animation-timing-function: cubic-bezier(0.76, 0, 0.24, 1);
+	animation-fill-mode: both;
+	animation-name: astroFadeOut; }[data-astro-transition=back][data-astro-transition-fallback="new"] [data-astro-transition-scope="astro-l25zdozq-1"],
+			[data-astro-transition=back][data-astro-transition-fallback="new"][data-astro-transition-scope="astro-l25zdozq-1"] { 
+	animation-duration: 180ms;
+	animation-timing-function: cubic-bezier(0.76, 0, 0.24, 1);
+	animation-fill-mode: both;
+	animation-name: astroFadeIn; }</style><style>[data-astro-transition-scope="astro-ss5qawsi-2"] { view-transition-name: nav-explorers; }@layer astro { ::view-transition-old(nav-explorers) { 
+	animation-duration: 180ms;
+	animation-timing-function: cubic-bezier(0.76, 0, 0.24, 1);
+	animation-fill-mode: both;
+	animation-name: astroFadeOut; }::view-transition-new(nav-explorers) { 
+	animation-duration: 180ms;
+	animation-timing-function: cubic-bezier(0.76, 0, 0.24, 1);
+	animation-fill-mode: both;
+	animation-name: astroFadeIn; }[data-astro-transition=back]::view-transition-old(nav-explorers) { 
+	animation-duration: 180ms;
+	animation-timing-function: cubic-bezier(0.76, 0, 0.24, 1);
+	animation-fill-mode: both;
+	animation-name: astroFadeOut; }[data-astro-transition=back]::view-transition-new(nav-explorers) { 
+	animation-duration: 180ms;
+	animation-timing-function: cubic-bezier(0.76, 0, 0.24, 1);
+	animation-fill-mode: both;
+	animation-name: astroFadeIn; } }[data-astro-transition-fallback="old"] [data-astro-transition-scope="astro-ss5qawsi-2"],
+			[data-astro-transition-fallback="old"][data-astro-transition-scope="astro-ss5qawsi-2"] { 
+	animation-duration: 180ms;
+	animation-timing-function: cubic-bezier(0.76, 0, 0.24, 1);
+	animation-fill-mode: both;
+	animation-name: astroFadeOut; }[data-astro-transition-fallback="new"] [data-astro-transition-scope="astro-ss5qawsi-2"],
+			[data-astro-transition-fallback="new"][data-astro-transition-scope="astro-ss5qawsi-2"] { 
+	animation-duration: 180ms;
+	animation-timing-function: cubic-bezier(0.76, 0, 0.24, 1);
+	animation-fill-mode: both;
+	animation-name: astroFadeIn; }[data-astro-transition=back][data-astro-transition-fallback="old"] [data-astro-transition-scope="astro-ss5qawsi-2"],
+			[data-astro-transition=back][data-astro-transition-fallback="old"][data-astro-transition-scope="astro-ss5qawsi-2"] { 
+	animation-duration: 180ms;
+	animation-timing-function: cubic-bezier(0.76, 0, 0.24, 1);
+	animation-fill-mode: both;
+	animation-name: astroFadeOut; }[data-astro-transition=back][data-astro-transition-fallback="new"] [data-astro-transition-scope="astro-ss5qawsi-2"],
+			[data-astro-transition=back][data-astro-transition-fallback="new"][data-astro-transition-scope="astro-ss5qawsi-2"] { 
+	animation-duration: 180ms;
+	animation-timing-function: cubic-bezier(0.76, 0, 0.24, 1);
+	animation-fill-mode: both;
+	animation-name: astroFadeIn; }</style><style>[data-astro-transition-scope="astro-ss5qawsi-3"] { view-transition-name: nav-adventurers; }@layer astro { ::view-transition-old(nav-adventurers) { 
+	animation-duration: 180ms;
+	animation-timing-function: cubic-bezier(0.76, 0, 0.24, 1);
+	animation-fill-mode: both;
+	animation-name: astroFadeOut; }::view-transition-new(nav-adventurers) { 
+	animation-duration: 180ms;
+	animation-timing-function: cubic-bezier(0.76, 0, 0.24, 1);
+	animation-fill-mode: both;
+	animation-name: astroFadeIn; }[data-astro-transition=back]::view-transition-old(nav-adventurers) { 
+	animation-duration: 180ms;
+	animation-timing-function: cubic-bezier(0.76, 0, 0.24, 1);
+	animation-fill-mode: both;
+	animation-name: astroFadeOut; }[data-astro-transition=back]::view-transition-new(nav-adventurers) { 
+	animation-duration: 180ms;
+	animation-timing-function: cubic-bezier(0.76, 0, 0.24, 1);
+	animation-fill-mode: both;
+	animation-name: astroFadeIn; } }[data-astro-transition-fallback="old"] [data-astro-transition-scope="astro-ss5qawsi-3"],
+			[data-astro-transition-fallback="old"][data-astro-transition-scope="astro-ss5qawsi-3"] { 
+	animation-duration: 180ms;
+	animation-timing-function: cubic-bezier(0.76, 0, 0.24, 1);
+	animation-fill-mode: both;
+	animation-name: astroFadeOut; }[data-astro-transition-fallback="new"] [data-astro-transition-scope="astro-ss5qawsi-3"],
+			[data-astro-transition-fallback="new"][data-astro-transition-scope="astro-ss5qawsi-3"] { 
+	animation-duration: 180ms;
+	animation-timing-function: cubic-bezier(0.76, 0, 0.24, 1);
+	animation-fill-mode: both;
+	animation-name: astroFadeIn; }[data-astro-transition=back][data-astro-transition-fallback="old"] [data-astro-transition-scope="astro-ss5qawsi-3"],
+			[data-astro-transition=back][data-astro-transition-fallback="old"][data-astro-transition-scope="astro-ss5qawsi-3"] { 
+	animation-duration: 180ms;
+	animation-timing-function: cubic-bezier(0.76, 0, 0.24, 1);
+	animation-fill-mode: both;
+	animation-name: astroFadeOut; }[data-astro-transition=back][data-astro-transition-fallback="new"] [data-astro-transition-scope="astro-ss5qawsi-3"],
+			[data-astro-transition=back][data-astro-transition-fallback="new"][data-astro-transition-scope="astro-ss5qawsi-3"] { 
+	animation-duration: 180ms;
+	animation-timing-function: cubic-bezier(0.76, 0, 0.24, 1);
+	animation-fill-mode: both;
+	animation-name: astroFadeIn; }</style><style>[data-astro-transition-scope="astro-ss5qawsi-4"] { view-transition-name: nav-builders; }@layer astro { ::view-transition-old(nav-builders) { 
+	animation-duration: 180ms;
+	animation-timing-function: cubic-bezier(0.76, 0, 0.24, 1);
+	animation-fill-mode: both;
+	animation-name: astroFadeOut; }::view-transition-new(nav-builders) { 
+	animation-duration: 180ms;
+	animation-timing-function: cubic-bezier(0.76, 0, 0.24, 1);
+	animation-fill-mode: both;
+	animation-name: astroFadeIn; }[data-astro-transition=back]::view-transition-old(nav-builders) { 
+	animation-duration: 180ms;
+	animation-timing-function: cubic-bezier(0.76, 0, 0.24, 1);
+	animation-fill-mode: both;
+	animation-name: astroFadeOut; }[data-astro-transition=back]::view-transition-new(nav-builders) { 
+	animation-duration: 180ms;
+	animation-timing-function: cubic-bezier(0.76, 0, 0.24, 1);
+	animation-fill-mode: both;
+	animation-name: astroFadeIn; } }[data-astro-transition-fallback="old"] [data-astro-transition-scope="astro-ss5qawsi-4"],
+			[data-astro-transition-fallback="old"][data-astro-transition-scope="astro-ss5qawsi-4"] { 
+	animation-duration: 180ms;
+	animation-timing-function: cubic-bezier(0.76, 0, 0.24, 1);
+	animation-fill-mode: both;
+	animation-name: astroFadeOut; }[data-astro-transition-fallback="new"] [data-astro-transition-scope="astro-ss5qawsi-4"],
+			[data-astro-transition-fallback="new"][data-astro-transition-scope="astro-ss5qawsi-4"] { 
+	animation-duration: 180ms;
+	animation-timing-function: cubic-bezier(0.76, 0, 0.24, 1);
+	animation-fill-mode: both;
+	animation-name: astroFadeIn; }[data-astro-transition=back][data-astro-transition-fallback="old"] [data-astro-transition-scope="astro-ss5qawsi-4"],
+			[data-astro-transition=back][data-astro-transition-fallback="old"][data-astro-transition-scope="astro-ss5qawsi-4"] { 
+	animation-duration: 180ms;
+	animation-timing-function: cubic-bezier(0.76, 0, 0.24, 1);
+	animation-fill-mode: both;
+	animation-name: astroFadeOut; }[data-astro-transition=back][data-astro-transition-fallback="new"] [data-astro-transition-scope="astro-ss5qawsi-4"],
+			[data-astro-transition=back][data-astro-transition-fallback="new"][data-astro-transition-scope="astro-ss5qawsi-4"] { 
+	animation-duration: 180ms;
+	animation-timing-function: cubic-bezier(0.76, 0, 0.24, 1);
+	animation-fill-mode: both;
+	animation-name: astroFadeIn; }</style><style>[data-astro-transition-scope="astro-ss5qawsi-5"] { view-transition-name: nav-challengers; }@layer astro { ::view-transition-old(nav-challengers) { 
+	animation-duration: 180ms;
+	animation-timing-function: cubic-bezier(0.76, 0, 0.24, 1);
+	animation-fill-mode: both;
+	animation-name: astroFadeOut; }::view-transition-new(nav-challengers) { 
+	animation-duration: 180ms;
+	animation-timing-function: cubic-bezier(0.76, 0, 0.24, 1);
+	animation-fill-mode: both;
+	animation-name: astroFadeIn; }[data-astro-transition=back]::view-transition-old(nav-challengers) { 
+	animation-duration: 180ms;
+	animation-timing-function: cubic-bezier(0.76, 0, 0.24, 1);
+	animation-fill-mode: both;
+	animation-name: astroFadeOut; }[data-astro-transition=back]::view-transition-new(nav-challengers) { 
+	animation-duration: 180ms;
+	animation-timing-function: cubic-bezier(0.76, 0, 0.24, 1);
+	animation-fill-mode: both;
+	animation-name: astroFadeIn; } }[data-astro-transition-fallback="old"] [data-astro-transition-scope="astro-ss5qawsi-5"],
+			[data-astro-transition-fallback="old"][data-astro-transition-scope="astro-ss5qawsi-5"] { 
+	animation-duration: 180ms;
+	animation-timing-function: cubic-bezier(0.76, 0, 0.24, 1);
+	animation-fill-mode: both;
+	animation-name: astroFadeOut; }[data-astro-transition-fallback="new"] [data-astro-transition-scope="astro-ss5qawsi-5"],
+			[data-astro-transition-fallback="new"][data-astro-transition-scope="astro-ss5qawsi-5"] { 
+	animation-duration: 180ms;
+	animation-timing-function: cubic-bezier(0.76, 0, 0.24, 1);
+	animation-fill-mode: both;
+	animation-name: astroFadeIn; }[data-astro-transition=back][data-astro-transition-fallback="old"] [data-astro-transition-scope="astro-ss5qawsi-5"],
+			[data-astro-transition=back][data-astro-transition-fallback="old"][data-astro-transition-scope="astro-ss5qawsi-5"] { 
+	animation-duration: 180ms;
+	animation-timing-function: cubic-bezier(0.76, 0, 0.24, 1);
+	animation-fill-mode: both;
+	animation-name: astroFadeOut; }[data-astro-transition=back][data-astro-transition-fallback="new"] [data-astro-transition-scope="astro-ss5qawsi-5"],
+			[data-astro-transition=back][data-astro-transition-fallback="new"][data-astro-transition-scope="astro-ss5qawsi-5"] { 
+	animation-duration: 180ms;
+	animation-timing-function: cubic-bezier(0.76, 0, 0.24, 1);
+	animation-fill-mode: both;
+	animation-name: astroFadeIn; }</style><style>[data-astro-transition-scope="astro-ss5qawsi-6"] { view-transition-name: nav-pioneers; }@layer astro { ::view-transition-old(nav-pioneers) { 
+	animation-duration: 180ms;
+	animation-timing-function: cubic-bezier(0.76, 0, 0.24, 1);
+	animation-fill-mode: both;
+	animation-name: astroFadeOut; }::view-transition-new(nav-pioneers) { 
+	animation-duration: 180ms;
+	animation-timing-function: cubic-bezier(0.76, 0, 0.24, 1);
+	animation-fill-mode: both;
+	animation-name: astroFadeIn; }[data-astro-transition=back]::view-transition-old(nav-pioneers) { 
+	animation-duration: 180ms;
+	animation-timing-function: cubic-bezier(0.76, 0, 0.24, 1);
+	animation-fill-mode: both;
+	animation-name: astroFadeOut; }[data-astro-transition=back]::view-transition-new(nav-pioneers) { 
+	animation-duration: 180ms;
+	animation-timing-function: cubic-bezier(0.76, 0, 0.24, 1);
+	animation-fill-mode: both;
+	animation-name: astroFadeIn; } }[data-astro-transition-fallback="old"] [data-astro-transition-scope="astro-ss5qawsi-6"],
+			[data-astro-transition-fallback="old"][data-astro-transition-scope="astro-ss5qawsi-6"] { 
+	animation-duration: 180ms;
+	animation-timing-function: cubic-bezier(0.76, 0, 0.24, 1);
+	animation-fill-mode: both;
+	animation-name: astroFadeOut; }[data-astro-transition-fallback="new"] [data-astro-transition-scope="astro-ss5qawsi-6"],
+			[data-astro-transition-fallback="new"][data-astro-transition-scope="astro-ss5qawsi-6"] { 
+	animation-duration: 180ms;
+	animation-timing-function: cubic-bezier(0.76, 0, 0.24, 1);
+	animation-fill-mode: both;
+	animation-name: astroFadeIn; }[data-astro-transition=back][data-astro-transition-fallback="old"] [data-astro-transition-scope="astro-ss5qawsi-6"],
+			[data-astro-transition=back][data-astro-transition-fallback="old"][data-astro-transition-scope="astro-ss5qawsi-6"] { 
+	animation-duration: 180ms;
+	animation-timing-function: cubic-bezier(0.76, 0, 0.24, 1);
+	animation-fill-mode: both;
+	animation-name: astroFadeOut; }[data-astro-transition=back][data-astro-transition-fallback="new"] [data-astro-transition-scope="astro-ss5qawsi-6"],
+			[data-astro-transition=back][data-astro-transition-fallback="new"][data-astro-transition-scope="astro-ss5qawsi-6"] { 
+	animation-duration: 180ms;
+	animation-timing-function: cubic-bezier(0.76, 0, 0.24, 1);
+	animation-fill-mode: both;
+	animation-name: astroFadeIn; }</style></head><body class="min-h-screen transition-colors duration-300"><header class="sticky top-0 z-50 header-blur border-b"><div class="container"><nav class="flex items-center justify-between gap-3 sm:gap-6 py-3"><div class="flex items-center gap-3"><a href="/challengers/" class="flex items-center gap-2 px-3 py-1.5 rounded-full bg-zinc-100 dark:bg-zinc-800 hover:bg-zinc-200 dark:hover:bg-zinc-700 text-zinc-600 dark:text-zinc-300 transition-all hover:-translate-x-1 group animate-in slide-in-from-left-4 fade-in duration-300"><span class="material-symbols-outlined text-xl group-hover:scale-110 transition-transform" aria-hidden="true">arrow_back</span><span class="text-sm font-bold hidden sm:inline">Back</span></a><a data-astro-transition-scope="astro-l25zdozq-1" href="/" class="flex items-center text-2xl font-black uppercase tracking-tighter hover:opacity-80 transition-opacity"><span class="text-indigo-600 dark:text-indigo-400">RL</span></a></div><div class="hidden lg:flex items-center gap-2"><a data-astro-transition-scope="astro-ss5qawsi-2" href="/explorers/" class="nav-btn transition-all duration-300 border flex-col !py-1.5 !px-3 border-pink-200 dark:border-pink-700 hover:scale-105 hover:bg-gradient-to-r from-pink-50 to-rose-50 dark:from-pink-900/50 dark:to-rose-900/50 bg-white dark:bg-zinc-900"><div class="flex items-center gap-1.5"><span class="material-symbols-outlined text-base text-pink-500 " aria-hidden="true">star</span><span class="font-semibold text-xs xl:text-sm text-pink-600 dark:text-pink-400">Explorers</span></div><span class="text-[10px] text-zinc-500 dark:text-zinc-400 leading-tight hidden xl:block">3-5 Years</span></a><a data-astro-transition-scope="astro-ss5qawsi-3" href="/adventurers/" class="nav-btn transition-all duration-300 border flex-col !py-1.5 !px-3 border-sky-200 dark:border-sky-700 hover:scale-105 hover:bg-gradient-to-r from-sky-50 to-cyan-50 dark:from-sky-900/50 dark:to-cyan-900/50 bg-white dark:bg-zinc-900"><div class="flex items-center gap-1.5"><span class="material-symbols-outlined text-base text-sky-500 " aria-hidden="true">rocket_launch</span><span class="font-semibold text-xs xl:text-sm text-sky-600 dark:text-sky-400">Adventurers</span></div><span class="text-[10px] text-zinc-500 dark:text-zinc-400 leading-tight hidden xl:block">6-8 Years</span></a><a data-astro-transition-scope="astro-ss5qawsi-4" href="/builders/" class="nav-btn transition-all duration-300 border flex-col !py-1.5 !px-3 border-green-200 dark:border-green-700 hover:scale-105 hover:bg-gradient-to-r from-green-50 to-emerald-50 dark:from-green-900/50 dark:to-emerald-900/50 bg-white dark:bg-zinc-900"><div class="flex items-center gap-1.5"><span class="material-symbols-outlined text-base text-green-500 " aria-hidden="true">build</span><span class="font-semibold text-xs xl:text-sm text-green-600 dark:text-green-400">Builders</span></div><span class="text-[10px] text-zinc-500 dark:text-zinc-400 leading-tight hidden xl:block">9-11 Years</span></a><a data-astro-transition-scope="astro-ss5qawsi-5" href="/challengers/" class="nav-btn transition-all duration-300 border flex-col !py-1.5 !px-3 border-violet-200 dark:border-violet-700 ring-violet-400 ring-2 scale-105 font-bold bg-gradient-to-r from-violet-50 to-purple-50 dark:from-violet-900/50 dark:to-purple-900/50"><div class="flex items-center gap-1.5"><span class="material-symbols-outlined text-base text-violet-500 animate-bounce-soft" aria-hidden="true">bolt</span><span class="font-semibold text-xs xl:text-sm text-violet-600 dark:text-violet-400">Challengers</span></div><span class="text-[10px] text-zinc-500 dark:text-zinc-400 leading-tight hidden xl:block">12-14 Years</span></a><a data-astro-transition-scope="astro-ss5qawsi-6" href="/pioneers/" class="nav-btn transition-all duration-300 border flex-col !py-1.5 !px-3 border-orange-200 dark:border-orange-700 hover:scale-105 hover:bg-gradient-to-r from-orange-50 to-amber-50 dark:from-orange-900/50 dark:to-amber-900/50 bg-white dark:bg-zinc-900"><div class="flex items-center gap-1.5"><span class="material-symbols-outlined text-base text-orange-500 " aria-hidden="true">flag</span><span class="font-semibold text-xs xl:text-sm text-orange-600 dark:text-orange-400">Pioneers</span></div><span class="text-[10px] text-zinc-500 dark:text-zinc-400 leading-tight hidden xl:block">15-16 Years</span></a></div><div class="flex items-center gap-2 sm:gap-3"><!-- Combined Stats Pill --><div class="flex items-center h-9 sm:h-11 rounded-full overflow-hidden shadow-lg shadow-rose-500/20 hover:scale-105 transition-transform cursor-default select-none"><!-- Love Section --><div class="flex items-center h-full gap-2 px-3 sm:px-4 bg-gradient-to-r from-rose-500 to-pink-500 text-white text-xs sm:text-sm font-semibold" title="Total Love"><span class="text-sm sm:text-lg">❤️</span><span id="love-count">0</span></div><!-- Streak Section --><div class="hidden sm:flex items-center h-full gap-2 px-4 bg-gradient-to-r from-amber-500 to-orange-500 text-white text-sm font-semibold" title="Day Streak"><span class="text-lg animate-pulse">🔥</span><span id="streak-count">0</span></div></div><button id="theme-toggle" class="w-9 h-9 sm:w-11 sm:h-11 rounded-xl flex items-center justify-center bg-zinc-100 dark:bg-zinc-900 border border-zinc-200 dark:border-zinc-700 hover:border-indigo-500 hover:scale-105 transition-all duration-200 cursor-pointer overflow-hidden relative" aria-label="Toggle theme" data-astro-cid-l6lhmie6><span class="theme-sun absolute transition-all duration-300" data-astro-cid-l6lhmie6><span class="material-symbols-outlined text-2xl" aria-hidden="true">light_mode</span></span><span class="theme-moon absolute transition-all duration-300 opacity-0 rotate-[-90deg] scale-50" data-astro-cid-l6lhmie6><span class="material-symbols-outlined text-2xl" aria-hidden="true">dark_mode</span></span></button><script>
+  function initThemeToggle() {
+    const toggle = document.getElementById('theme-toggle');
+    if (!toggle) return;
+
+    const html = document.documentElement;
+
+    const setTheme = (theme) => {
+      html.classList.toggle('dark', theme === 'dark');
+      localStorage.setItem('theme', theme);
+    };
+
+    // Clone to remove old listeners
+    const newToggle = toggle.cloneNode(true);
+    toggle.parentNode.replaceChild(newToggle, toggle);
+
+    newToggle.addEventListener('click', () => {
+      const newTheme = html.classList.contains('dark') ? 'light' : 'dark';
+      setTheme(newTheme);
+    });
+  }
+
+  // Handle both initial load and View Transitions
+  document.addEventListener('DOMContentLoaded', initThemeToggle);
+  document.addEventListener('astro:page-load', initThemeToggle);
+</script><!-- Settings Dropdown --><div class="relative group"><button id="settings-btn" class="w-9 h-9 sm:w-11 sm:h-11 rounded-xl flex items-center justify-center bg-zinc-100 dark:bg-zinc-900 border border-zinc-200 dark:border-zinc-700 hover:border-indigo-500 hover:scale-105 transition-all duration-200 cursor-pointer" aria-label="Settings"><span class="material-symbols-outlined text-xl" aria-hidden="true">settings</span></button><!-- Dropdown Menu --><div class="absolute right-0 top-full mt-2 w-48 bg-white dark:bg-zinc-900 rounded-xl shadow-xl border border-zinc-100 dark:border-zinc-800 p-2 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 transform origin-top-right scale-95 group-hover:scale-100 z-50"><button id="reset-btn" class="w-full flex items-center gap-2 px-3 py-2 text-sm font-medium text-rose-500 hover:bg-rose-50 dark:hover:bg-rose-900/20 rounded-lg transition-colors"><span class="material-symbols-outlined text-xl" aria-hidden="true">refresh</span>Reset Progress</button></div></div></div></nav></div></header><script>
+  function initNav() {
+    const loveCount = document.getElementById('love-count');
+    const streakCount = document.getElementById('streak-count');
+    const resetBtn = document.getElementById('reset-btn');
+
+    // Read from localStorage directly (nanostores persistent format)
+    const getProgress = () => {
+      try {
+        const completed = JSON.parse(localStorage.getItem('userProgress:completed') || '[]');
+        const streak = parseInt(localStorage.getItem('userProgress:streak') || '3');
+        return { completed, streak };
+      } catch {
+        return { completed: [], streak: 3 };
+      }
+    };
+
+    // Update UI
+    const updateUI = () => {
+      const progress = getProgress();
+      if (loveCount) {
+        // Each activity is worth 50 love
+        const score = progress.completed.length * 50;
+        loveCount.textContent = score.toString();
+      }
+      if (streakCount) {
+        streakCount.textContent = progress.streak.toString();
+      }
+    };
+
+    // Initial update
+    updateUI();
+
+    // Listen for storage changes (when other tabs or scripts update)
+    window.addEventListener('storage', updateUI);
+
+    // Also update on custom event (when activities are completed in the same tab)
+    window.addEventListener('progress-updated', updateUI);
+
+    // Reset Logic - clone to remove old listeners
+    if (resetBtn) {
+      const newResetBtn = resetBtn.cloneNode(true);
+      resetBtn.parentNode.replaceChild(newResetBtn, resetBtn);
+
+      newResetBtn.addEventListener('click', () => {
+        if (confirm('Are you sure you want to reset all progress? This cannot be undone.')) {
+          localStorage.setItem('userProgress:completed', '[]');
+          localStorage.setItem('userProgress:streak', '3');
+          localStorage.setItem('userProgress:unlocked', '["colors","colors-flashcards"]');
+          window.location.reload();
+        }
+      });
+    }
+  }
+
+  // Handle both initial load and View Transitions
+  document.addEventListener('DOMContentLoaded', initNav);
+  document.addEventListener('astro:page-load', initNav);
+</script><main class="min-h-screen sm:py-6 pb-20 relative overflow-hidden" data-astro-cid-7kxtd62e><!-- Background gradient --><div class="absolute inset-0 pointer-events-none" data-astro-cid-7kxtd62e><div class="absolute top-0 right-0 w-full h-full bg-[radial-gradient(circle_at_90%_10%,rgba(139,92,246,0.15)_0%,transparent_50%)]" data-astro-cid-7kxtd62e></div><div class="absolute bottom-0 left-0 w-full h-full bg-[radial-gradient(circle_at_10%_90%,rgba(59,130,246,0.1)_0%,transparent_50%)]" data-astro-cid-7kxtd62e></div></div><div class="w-full relative" data-astro-cid-7kxtd62e><div class="periodic-brainer-game w-full" data-id="periodic-brainer" data-elements="[{&quot;symbol&quot;:&quot;H&quot;,&quot;name&quot;:&quot;Hydrogen&quot;,&quot;number&quot;:1,&quot;row&quot;:1,&quot;col&quot;:1,&quot;category&quot;:&quot;nonmetal&quot;,&quot;emoji&quot;:&quot;💧&quot;,&quot;cue&quot;:&quot;H₂O Water&quot;},{&quot;symbol&quot;:&quot;He&quot;,&quot;name&quot;:&quot;Helium&quot;,&quot;number&quot;:2,&quot;row&quot;:1,&quot;col&quot;:18,&quot;category&quot;:&quot;noble&quot;,&quot;emoji&quot;:&quot;🎈&quot;,&quot;cue&quot;:&quot;Floats balloons&quot;},{&quot;symbol&quot;:&quot;Li&quot;,&quot;name&quot;:&quot;Lithium&quot;,&quot;number&quot;:3,&quot;row&quot;:2,&quot;col&quot;:1,&quot;category&quot;:&quot;alkali&quot;,&quot;emoji&quot;:&quot;🔋&quot;,&quot;cue&quot;:&quot;Li-ion battery&quot;},{&quot;symbol&quot;:&quot;Be&quot;,&quot;name&quot;:&quot;Beryllium&quot;,&quot;number&quot;:4,&quot;row&quot;:2,&quot;col&quot;:2,&quot;category&quot;:&quot;alkaline&quot;,&quot;emoji&quot;:&quot;💎&quot;,&quot;cue&quot;:&quot;Gems &amp; alloys&quot;},{&quot;symbol&quot;:&quot;B&quot;,&quot;name&quot;:&quot;Boron&quot;,&quot;number&quot;:5,&quot;row&quot;:2,&quot;col&quot;:13,&quot;category&quot;:&quot;metalloid&quot;,&quot;emoji&quot;:&quot;🧪&quot;,&quot;cue&quot;:&quot;Borax cleaner&quot;},{&quot;symbol&quot;:&quot;C&quot;,&quot;name&quot;:&quot;Carbon&quot;,&quot;number&quot;:6,&quot;row&quot;:2,&quot;col&quot;:14,&quot;category&quot;:&quot;nonmetal&quot;,&quot;emoji&quot;:&quot;💎&quot;,&quot;cue&quot;:&quot;Diamonds!&quot;},{&quot;symbol&quot;:&quot;N&quot;,&quot;name&quot;:&quot;Nitrogen&quot;,&quot;number&quot;:7,&quot;row&quot;:2,&quot;col&quot;:15,&quot;category&quot;:&quot;nonmetal&quot;,&quot;emoji&quot;:&quot;💨&quot;,&quot;cue&quot;:&quot;78% of air&quot;},{&quot;symbol&quot;:&quot;O&quot;,&quot;name&quot;:&quot;Oxygen&quot;,&quot;number&quot;:8,&quot;row&quot;:2,&quot;col&quot;:16,&quot;category&quot;:&quot;nonmetal&quot;,&quot;emoji&quot;:&quot;🫁&quot;,&quot;cue&quot;:&quot;We breathe it&quot;},{&quot;symbol&quot;:&quot;F&quot;,&quot;name&quot;:&quot;Fluorine&quot;,&quot;number&quot;:9,&quot;row&quot;:2,&quot;col&quot;:17,&quot;category&quot;:&quot;halogen&quot;,&quot;emoji&quot;:&quot;🦷&quot;,&quot;cue&quot;:&quot;Toothpaste&quot;},{&quot;symbol&quot;:&quot;Ne&quot;,&quot;name&quot;:&quot;Neon&quot;,&quot;number&quot;:10,&quot;row&quot;:2,&quot;col&quot;:18,&quot;category&quot;:&quot;noble&quot;,&quot;emoji&quot;:&quot;💡&quot;,&quot;cue&quot;:&quot;Neon signs&quot;},{&quot;symbol&quot;:&quot;Na&quot;,&quot;name&quot;:&quot;Sodium&quot;,&quot;number&quot;:11,&quot;row&quot;:3,&quot;col&quot;:1,&quot;category&quot;:&quot;alkali&quot;,&quot;emoji&quot;:&quot;🧂&quot;,&quot;cue&quot;:&quot;Table salt&quot;},{&quot;symbol&quot;:&quot;Mg&quot;,&quot;name&quot;:&quot;Magnesium&quot;,&quot;number&quot;:12,&quot;row&quot;:3,&quot;col&quot;:2,&quot;category&quot;:&quot;alkaline&quot;,&quot;emoji&quot;:&quot;🔥&quot;,&quot;cue&quot;:&quot;Burns bright&quot;},{&quot;symbol&quot;:&quot;Al&quot;,&quot;name&quot;:&quot;Aluminum&quot;,&quot;number&quot;:13,&quot;row&quot;:3,&quot;col&quot;:13,&quot;category&quot;:&quot;post-transition&quot;,&quot;emoji&quot;:&quot;🥫&quot;,&quot;cue&quot;:&quot;Foil &amp; cans&quot;},{&quot;symbol&quot;:&quot;Si&quot;,&quot;name&quot;:&quot;Silicon&quot;,&quot;number&quot;:14,&quot;row&quot;:3,&quot;col&quot;:14,&quot;category&quot;:&quot;metalloid&quot;,&quot;emoji&quot;:&quot;💻&quot;,&quot;cue&quot;:&quot;Computer chips&quot;},{&quot;symbol&quot;:&quot;P&quot;,&quot;name&quot;:&quot;Phosphorus&quot;,&quot;number&quot;:15,&quot;row&quot;:3,&quot;col&quot;:15,&quot;category&quot;:&quot;nonmetal&quot;,&quot;emoji&quot;:&quot;🔦&quot;,&quot;cue&quot;:&quot;Glows in dark&quot;},{&quot;symbol&quot;:&quot;S&quot;,&quot;name&quot;:&quot;Sulfur&quot;,&quot;number&quot;:16,&quot;row&quot;:3,&quot;col&quot;:16,&quot;category&quot;:&quot;nonmetal&quot;,&quot;emoji&quot;:&quot;🥚&quot;,&quot;cue&quot;:&quot;Rotten egg smell&quot;},{&quot;symbol&quot;:&quot;Cl&quot;,&quot;name&quot;:&quot;Chlorine&quot;,&quot;number&quot;:17,&quot;row&quot;:3,&quot;col&quot;:17,&quot;category&quot;:&quot;halogen&quot;,&quot;emoji&quot;:&quot;🏊&quot;,&quot;cue&quot;:&quot;Pool cleaner&quot;},{&quot;symbol&quot;:&quot;Ar&quot;,&quot;name&quot;:&quot;Argon&quot;,&quot;number&quot;:18,&quot;row&quot;:3,&quot;col&quot;:18,&quot;category&quot;:&quot;noble&quot;,&quot;emoji&quot;:&quot;💡&quot;,&quot;cue&quot;:&quot;Light bulbs&quot;},{&quot;symbol&quot;:&quot;K&quot;,&quot;name&quot;:&quot;Potassium&quot;,&quot;number&quot;:19,&quot;row&quot;:4,&quot;col&quot;:1,&quot;category&quot;:&quot;alkali&quot;,&quot;emoji&quot;:&quot;🍌&quot;,&quot;cue&quot;:&quot;In bananas&quot;},{&quot;symbol&quot;:&quot;Ca&quot;,&quot;name&quot;:&quot;Calcium&quot;,&quot;number&quot;:20,&quot;row&quot;:4,&quot;col&quot;:2,&quot;category&quot;:&quot;alkaline&quot;,&quot;emoji&quot;:&quot;🦴&quot;,&quot;cue&quot;:&quot;Strong bones&quot;},{&quot;symbol&quot;:&quot;Sc&quot;,&quot;name&quot;:&quot;Scandium&quot;,&quot;number&quot;:21,&quot;row&quot;:4,&quot;col&quot;:3,&quot;category&quot;:&quot;transition&quot;,&quot;emoji&quot;:&quot;🚲&quot;,&quot;cue&quot;:&quot;Bike frames&quot;},{&quot;symbol&quot;:&quot;Ti&quot;,&quot;name&quot;:&quot;Titanium&quot;,&quot;number&quot;:22,&quot;row&quot;:4,&quot;col&quot;:4,&quot;category&quot;:&quot;transition&quot;,&quot;emoji&quot;:&quot;🦾&quot;,&quot;cue&quot;:&quot;Aerospace&quot;},{&quot;symbol&quot;:&quot;V&quot;,&quot;name&quot;:&quot;Vanadium&quot;,&quot;number&quot;:23,&quot;row&quot;:4,&quot;col&quot;:5,&quot;category&quot;:&quot;transition&quot;,&quot;emoji&quot;:&quot;🔧&quot;,&quot;cue&quot;:&quot;Hard steel&quot;},{&quot;symbol&quot;:&quot;Cr&quot;,&quot;name&quot;:&quot;Chromium&quot;,&quot;number&quot;:24,&quot;row&quot;:4,&quot;col&quot;:6,&quot;category&quot;:&quot;transition&quot;,&quot;emoji&quot;:&quot;✨&quot;,&quot;cue&quot;:&quot;Shiny chrome&quot;},{&quot;symbol&quot;:&quot;Mn&quot;,&quot;name&quot;:&quot;Manganese&quot;,&quot;number&quot;:25,&quot;row&quot;:4,&quot;col&quot;:7,&quot;category&quot;:&quot;transition&quot;,&quot;emoji&quot;:&quot;🔋&quot;,&quot;cue&quot;:&quot;Batteries&quot;},{&quot;symbol&quot;:&quot;Fe&quot;,&quot;name&quot;:&quot;Iron&quot;,&quot;number&quot;:26,&quot;row&quot;:4,&quot;col&quot;:8,&quot;category&quot;:&quot;transition&quot;,&quot;emoji&quot;:&quot;🏗️&quot;,&quot;cue&quot;:&quot;Steel beams&quot;},{&quot;symbol&quot;:&quot;Co&quot;,&quot;name&quot;:&quot;Cobalt&quot;,&quot;number&quot;:27,&quot;row&quot;:4,&quot;col&quot;:9,&quot;category&quot;:&quot;transition&quot;,&quot;emoji&quot;:&quot;🔵&quot;,&quot;cue&quot;:&quot;Blue glass&quot;},{&quot;symbol&quot;:&quot;Ni&quot;,&quot;name&quot;:&quot;Nickel&quot;,&quot;number&quot;:28,&quot;row&quot;:4,&quot;col&quot;:10,&quot;category&quot;:&quot;transition&quot;,&quot;emoji&quot;:&quot;🪙&quot;,&quot;cue&quot;:&quot;Coins&quot;},{&quot;symbol&quot;:&quot;Cu&quot;,&quot;name&quot;:&quot;Copper&quot;,&quot;number&quot;:29,&quot;row&quot;:4,&quot;col&quot;:11,&quot;category&quot;:&quot;transition&quot;,&quot;emoji&quot;:&quot;⚡&quot;,&quot;cue&quot;:&quot;Wires&quot;},{&quot;symbol&quot;:&quot;Zn&quot;,&quot;name&quot;:&quot;Zinc&quot;,&quot;number&quot;:30,&quot;row&quot;:4,&quot;col&quot;:12,&quot;category&quot;:&quot;transition&quot;,&quot;emoji&quot;:&quot;🧴&quot;,&quot;cue&quot;:&quot;Sunscreen&quot;}]" data-category-colors="{&quot;alkali&quot;:{&quot;bg&quot;:&quot;bg-rose-100 dark:bg-rose-900/40&quot;,&quot;border&quot;:&quot;border-rose-400&quot;,&quot;text&quot;:&quot;text-rose-700 dark:text-rose-300&quot;},&quot;alkaline&quot;:{&quot;bg&quot;:&quot;bg-orange-100 dark:bg-orange-900/40&quot;,&quot;border&quot;:&quot;border-orange-400&quot;,&quot;text&quot;:&quot;text-orange-700 dark:text-orange-300&quot;},&quot;nonmetal&quot;:{&quot;bg&quot;:&quot;bg-green-100 dark:bg-green-900/40&quot;,&quot;border&quot;:&quot;border-green-400&quot;,&quot;text&quot;:&quot;text-green-700 dark:text-green-300&quot;},&quot;halogen&quot;:{&quot;bg&quot;:&quot;bg-teal-100 dark:bg-teal-900/40&quot;,&quot;border&quot;:&quot;border-teal-400&quot;,&quot;text&quot;:&quot;text-teal-700 dark:text-teal-300&quot;},&quot;noble&quot;:{&quot;bg&quot;:&quot;bg-violet-100 dark:bg-violet-900/40&quot;,&quot;border&quot;:&quot;border-violet-400&quot;,&quot;text&quot;:&quot;text-violet-700 dark:text-violet-300&quot;},&quot;metalloid&quot;:{&quot;bg&quot;:&quot;bg-sky-100 dark:bg-sky-900/40&quot;,&quot;border&quot;:&quot;border-sky-400&quot;,&quot;text&quot;:&quot;text-sky-700 dark:text-sky-300&quot;},&quot;post-transition&quot;:{&quot;bg&quot;:&quot;bg-blue-100 dark:bg-blue-900/40&quot;,&quot;border&quot;:&quot;border-blue-400&quot;,&quot;text&quot;:&quot;text-blue-700 dark:text-blue-300&quot;},&quot;transition&quot;:{&quot;bg&quot;:&quot;bg-yellow-100 dark:bg-yellow-900/40&quot;,&quot;border&quot;:&quot;border-yellow-400&quot;,&quot;text&quot;:&quot;text-yellow-700 dark:text-yellow-300&quot;}}" data-next-url="/challengers/time-traveler/" data-astro-cid-7kxtd62e><!-- Header --><div class="flex items-center justify-between gap-4 mb-4 px-4 sm:px-0 max-w-4xl mx-auto" data-astro-cid-7kxtd62e><div class="flex items-center gap-2" data-astro-cid-7kxtd62e><span class="material-symbols-outlined text-violet-600" data-astro-cid-7kxtd62e>science</span><span class="instruction-subtitle text-xs sm:text-sm font-medium text-zinc-600 dark:text-zinc-400" data-astro-cid-rmmxrznl>Master the periodic table structure</span></div><div class="flex items-center gap-2 px-4 py-2 bg-white/80 dark:bg-zinc-900/80 border border-zinc-200 dark:border-zinc-700/50 rounded-full shadow-sm" data-astro-cid-7kxtd62e><span class="material-symbols-outlined text-violet-600" data-astro-cid-7kxtd62e>psychology</span><span id="phase-display" class="font-bold text-violet-700 dark:text-violet-400" data-astro-cid-7kxtd62e>Phase 1</span></div></div><!-- Game Container --><div class="bg-white dark:bg-zinc-900 rounded-none sm:rounded-3xl p-2 sm:p-6 shadow-xl border-y sm:border border-zinc-100 dark:border-zinc-800 w-full max-w-4xl mx-auto" data-astro-cid-7kxtd62e><!-- Phase Indicator --><div class="flex justify-center gap-2 mb-4" data-astro-cid-7kxtd62e><div id="phase-1-dot" class="w-3 h-3 rounded-full bg-violet-500 transition-all" data-astro-cid-7kxtd62e></div><div id="phase-2-dot" class="w-3 h-3 rounded-full bg-zinc-300 dark:bg-zinc-600 transition-all" data-astro-cid-7kxtd62e></div><div id="phase-3-dot" class="w-3 h-3 rounded-full bg-zinc-300 dark:bg-zinc-600 transition-all" data-astro-cid-7kxtd62e></div></div><!-- Phase Title --><div class="text-center mb-4" data-astro-cid-7kxtd62e><h2 id="phase-title" class="text-xl sm:text-2xl font-bold text-zinc-800 dark:text-zinc-100" data-astro-cid-7kxtd62e>🧠 Memory Palace</h2><p id="phase-instruction" class="text-sm text-zinc-500 dark:text-zinc-400 mt-1" data-astro-cid-7kxtd62e>Watch and memorize where each element lives</p></div><!-- Category Legend --><div id="category-legend" class="hidden sm:flex flex-wrap justify-center gap-2 mb-4 text-xs" data-astro-cid-7kxtd62e><span class="px-2 py-1 rounded-full bg-rose-100 text-rose-700 dark:bg-rose-900/40 dark:text-rose-300" data-astro-cid-7kxtd62e>🔴 Alkali</span><span class="px-2 py-1 rounded-full bg-orange-100 text-orange-700 dark:bg-orange-900/40 dark:text-orange-300" data-astro-cid-7kxtd62e>🟠 Alkaline</span><span class="px-2 py-1 rounded-full bg-green-100 text-green-700 dark:bg-green-900/40 dark:text-green-300" data-astro-cid-7kxtd62e>🟢 Nonmetal</span><span class="px-2 py-1 rounded-full bg-teal-100 text-teal-700 dark:bg-teal-900/40 dark:text-teal-300" data-astro-cid-7kxtd62e>🔵 Halogen</span><span class="px-2 py-1 rounded-full bg-violet-100 text-violet-700 dark:bg-violet-900/40 dark:text-violet-300" data-astro-cid-7kxtd62e>🟣 Noble Gas</span><span class="px-2 py-1 rounded-full bg-yellow-100 text-yellow-700 dark:bg-yellow-900/40 dark:text-yellow-300" data-astro-cid-7kxtd62e>🟡 Transition</span></div><!-- Periodic Table Grid --><div id="grid-container" class="relative mb-4 mx-auto pt-16 sm:pt-20" style="max-width: 700px;" data-astro-cid-7kxtd62e><!-- Floating tooltip for memory tour --><div id="element-tooltip" class="tooltip-animate hidden absolute z-20 px-3 py-1.5 sm:px-4 sm:py-2 bg-gradient-to-r from-violet-600 to-fuchsia-600 text-white text-xs sm:text-sm font-medium rounded-xl shadow-2xl whitespace-nowrap transform -translate-x-1/2" data-astro-cid-7kxtd62e><span id="tooltip-content" data-astro-cid-7kxtd62e></span></div><!-- Horizontal scroll wrapper for mobile --><div id="grid-scroll-wrapper" class="overflow-x-auto pb-2 px-0 sm:overflow-visible" data-astro-cid-7kxtd62e><div id="periodic-grid" class="grid grid-cols-18 gap-0.5 sm:gap-1 min-w-[460px] sm:min-w-0" data-astro-cid-7kxtd62e><!-- Grid cells will be generated by JS --></div><!-- Mobile scroll indicator --><p class="text-center text-xs text-zinc-400 mt-2 sm:hidden" data-astro-cid-7kxtd62e>👆 Swipe to see full table</p></div></div><!-- Score Display (for placement phase) --><div id="score-display" class="hidden text-center mb-4" data-astro-cid-7kxtd62e><div class="inline-flex items-center gap-2 px-4 py-2 bg-violet-100 dark:bg-violet-900/30 rounded-full" data-astro-cid-7kxtd62e><span class="material-symbols-outlined text-violet-600" data-astro-cid-7kxtd62e>check_circle</span><span id="score-text" class="font-bold text-violet-700 dark:text-violet-300" data-astro-cid-7kxtd62e>0/20 placed</span></div></div><!-- Element Cards Tray (for placement phase) --><!-- Element Cards Tray (for placement phase) --><div id="element-tray" class="hidden" data-astro-cid-7kxtd62e><p class="text-center text-xs sm:text-sm text-zinc-500 dark:text-zinc-400 mb-3" data-astro-cid-7kxtd62e>👆 Tap or Drag an element to its position</p><!-- Horizontal scrollable tray --><div class="overflow-x-auto pb-4 -mx-4 px-4 sm:mx-0 sm:px-0 scrollbar-hide" data-astro-cid-7kxtd62e><div id="element-cards" class="flex gap-3 min-w-max px-2" data-astro-cid-7kxtd62e><!-- Cards generated by JS --></div></div></div><!-- Timer Bar (for phase 1) --><div id="timer-container" class="mt-4" data-astro-cid-7kxtd62e><div class="h-2 bg-zinc-200 dark:bg-zinc-700 rounded-full overflow-hidden" data-astro-cid-7kxtd62e><div id="timer-bar" class="h-full bg-gradient-to-r from-violet-400 to-fuchsia-500 transition-all duration-100" style="width: 100%" data-astro-cid-7kxtd62e></div></div><p id="timer-text" class="text-center text-sm text-zinc-500 dark:text-zinc-400 mt-2" data-astro-cid-7kxtd62e>Memorizing... <span id="timer-seconds" data-astro-cid-7kxtd62e>30</span>s</p></div><!-- Action Button --><div class="flex justify-center mt-4" data-astro-cid-7kxtd62e><button id="action-btn" class="hidden px-6 py-3 bg-gradient-to-r from-violet-500 to-fuchsia-500 text-white font-bold rounded-xl shadow-lg hover:from-violet-600 hover:to-fuchsia-600 transition-all active:scale-95" data-astro-cid-7kxtd62e><span class="flex items-center gap-2" data-astro-cid-7kxtd62e><span class="material-symbols-outlined" data-astro-cid-7kxtd62e>play_arrow</span><span id="action-text" data-astro-cid-7kxtd62e>Start Test</span></span></button></div><!-- Feedback removed as requested --><div id="feedback" class="hidden" data-astro-cid-7kxtd62e></div></div><div id="celebration-overlay" class="fixed inset-0 z-50 hidden items-center justify-center bg-black/60 backdrop-blur-sm"><!-- Confetti Container --><div id="confetti-container" class="absolute inset-0 overflow-hidden pointer-events-none"><!-- Confetti will be added via JS --></div><!-- Celebration Card --><div class="relative bg-white dark:bg-zinc-900 rounded-3xl p-8 mx-4 max-w-sm w-full shadow-2xl animate-bounce-in"><!-- Glow Effect --><div class="absolute -inset-1 bg-gradient-to-r from-violet-400 to-purple-500 rounded-3xl blur-lg opacity-50"></div><div class="relative"><!-- Stars --><div class="flex justify-center gap-2 mb-4"><span class="text-5xl animate-star-burst" style="animation-delay: 0s">⭐</span><span class="text-5xl animate-star-burst" style="animation-delay: 0.2s">⭐</span><span class="text-5xl animate-star-burst" style="animation-delay: 0.4s">⭐</span></div><!-- Trophy/Emoji --><div class="text-center mb-4"><span class="text-7xl animate-bounce-soft">🎉</span></div><!-- Message --><h2 class="text-3xl font-extrabold text-center mb-4 bg-gradient-to-r from-violet-400 to-purple-500 bg-clip-text text-transparent">Periodic Master!</h2><!-- Hearts Earned --><div class="flex justify-center mb-6"><span class="inline-flex items-center gap-2 px-6 py-2 rounded-full bg-rose-100 dark:bg-rose-900/40 text-rose-600 dark:text-rose-400 font-bold text-lg"><span class="text-2xl">❤️</span>+10 Hearts</span></div><!-- Action Buttons --><div class="flex gap-4"><button id="celebration-replay-btn" class="flex-1 py-3 rounded-2xl border-2 border-zinc-200 dark:border-zinc-700 font-bold text-zinc-600 dark:text-zinc-300 hover:bg-zinc-50 dark:hover:bg-zinc-800 transition-colors">Replay ↺</button><button id="celebration-next-btn" class="flex-[2] py-3 rounded-2xl bg-gradient-to-r from-violet-400 to-purple-500 text-white font-bold text-lg shadow-lg hover:scale-105 transition-transform">Next Level →</button></div></div></div></div><script type="module">var e=class{overlay=null;confettiContainer=null;replayBtn=null;nextBtn=null;constructor(){this.init()}init(){this.overlay=document.getElementById(`celebration-overlay`),this.confettiContainer=document.getElementById(`confetti-container`),this.replayBtn=document.getElementById(`celebration-replay-btn`),this.nextBtn=document.getElementById(`celebration-next-btn`),this.replayBtn?.addEventListener(`click`,()=>{this.hide(),document.dispatchEvent(new CustomEvent(`celebration-replay`))}),this.nextBtn?.addEventListener(`click`,()=>{this.hide(),document.dispatchEvent(new CustomEvent(`celebration-next`))})}show(){this.overlay||this.init(),this.overlay&&(this.overlay.classList.remove(`hidden`),this.overlay.classList.add(`flex`),this.createConfetti(),this.playSound())}hide(){this.overlay&&(this.overlay.classList.add(`hidden`),this.overlay.classList.remove(`flex`),this.confettiContainer&&(this.confettiContainer.innerHTML=``))}createConfetti(){if(!this.confettiContainer)return;this.confettiContainer.innerHTML=``;let e=[`#f472b6`,`#38bdf8`,`#4ade80`,`#fbbf24`,`#a78bfa`,`#fb923c`],t=[`●`,`■`,`▲`,`★`,`♦`];for(let n=0;n<50;n++){let n=document.createElement(`div`);n.className=`absolute text-2xl animate-confetti-fall pointer-events-none`,n.style.left=`${Math.random()*100}%`,n.style.animationDelay=`${Math.random()*2}s`,n.style.color=e[Math.floor(Math.random()*e.length)],n.textContent=t[Math.floor(Math.random()*t.length)],this.confettiContainer.appendChild(n)}}playSound(){let e=window;e.gameSounds&&e.gameSounds.playCelebration()}},t=()=>{let t=new e;window.showCelebration=()=>t.show()};document.addEventListener(`DOMContentLoaded`,t),document.addEventListener(`astro:page-load`,t);</script></div></div></main><script>
+      if ('serviceWorker' in navigator) {
+        // Unregister all service workers to prevent stale content issues
+        navigator.serviceWorker.getRegistrations().then((registrations) => {
+          for (const registration of registrations) {
+            registration.unregister();
+          }
+        });
+      }
+    </script></body></html><script type="module" src="/assets/periodic-brainer.astro_astro_type_script_index_0_lang.B9Hs4QFY.js"></script>

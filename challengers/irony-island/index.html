@@ -1,0 +1,338 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><meta name="description" content="Gamified learning platform for ages 3-16"><meta name="theme-color" content="#4f46e5"><link rel="canonical" href="https://learn.record10.com/challengers/irony-island/"><meta name="generator" content="Astro v7.1.1"><!-- Open Graph / Facebook --><meta property="og:type" content="website"><meta property="og:url" content="https://learn.record10.com/challengers/irony-island/"><meta property="og:title" content="Irony Island | Record Learn"><meta property="og:description" content="Gamified learning platform for ages 3-16"><meta property="og:image" content="https://learn.record10.com/favicon.svg"><!-- Twitter --><meta property="twitter:card" content="summary_large_image"><meta property="twitter:url" content="https://learn.record10.com/challengers/irony-island/"><meta property="twitter:title" content="Irony Island | Record Learn"><meta property="twitter:description" content="Gamified learning platform for ages 3-16"><meta property="twitter:image" content="https://learn.record10.com/favicon.svg"><link rel="manifest" href="/manifest.json"><!-- Google Material Symbols (self-hosted) --><link rel="icon" type="image/svg+xml" href="/favicon.svg"><title>Irony Island | Record Learn | Record Learn</title><meta name="astro-view-transitions-enabled" content="true"><meta name="astro-view-transitions-fallback" content="animate"><script type="module" src="/assets/ClientRouter.astro_astro_type_script_index_0_lang.6Spq5I16.js"></script><!-- Prevent flash of wrong theme --><script>
+      // Apply theme on initial load
+      (function () {
+        const theme =
+          localStorage.getItem('theme') ||
+          (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
+        if (theme === 'dark') {
+          document.documentElement.classList.add('dark');
+        }
+      })();
+
+      // Preserve theme during View Transitions
+      document.addEventListener('astro:before-swap', (event) => {
+        const isDark = document.documentElement.classList.contains('dark');
+        if (isDark) {
+          event.newDocument.documentElement.classList.add('dark');
+        }
+      });
+
+      // Re-apply theme after swap (safety net)
+      document.addEventListener('astro:after-swap', () => {
+        const theme = localStorage.getItem('theme');
+        if (theme === 'dark') {
+          document.documentElement.classList.add('dark');
+        } else if (theme === 'light') {
+          document.documentElement.classList.remove('dark');
+        }
+      });
+    </script><link rel="stylesheet" href="/assets/Nav.Di0ZGAG-.css"><style>.choice-btn[data-astro-cid-hobfb6a2]{--tw-border-opacity:1;border-width:2px;border-color:rgb(226 232 240/var(--tw-border-opacity,1));--tw-bg-opacity:1;background-color:rgb(255 255 255/var(--tw-bg-opacity,1));text-align:center;--tw-text-opacity:1;height:8rem;color:rgb(71 85 105/var(--tw-text-opacity,1));border-radius:.75rem;flex-direction:column;justify-content:center;align-items:center;padding:1rem;transition-property:all;transition-duration:.15s;transition-timing-function:cubic-bezier(.4,0,.2,1);display:flex}.choice-btn[data-astro-cid-hobfb6a2]:hover{--tw-border-opacity:1;border-color:rgb(129 140 248/var(--tw-border-opacity,1));--tw-text-opacity:1;color:rgb(79 70 229/var(--tw-text-opacity,1));--tw-shadow:0 10px 15px -3px #0000001a, 0 4px 6px -4px #0000001a;--tw-shadow-colored:0 10px 15px -3px var(--tw-shadow-color), 0 4px 6px -4px var(--tw-shadow-color);box-shadow:var(--tw-ring-offset-shadow,0 0 #0000), var(--tw-ring-shadow,0 0 #0000), var(--tw-shadow)}.choice-btn[data-astro-cid-hobfb6a2]:active{--tw-scale-x:.95;--tw-scale-y:.95;transform:translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y))}.choice-btn[data-astro-cid-hobfb6a2].selected-correct{pointer-events:none;--tw-border-opacity:1;border-color:rgb(16 185 129/var(--tw-border-opacity,1));--tw-bg-opacity:1;background-color:rgb(236 253 245/var(--tw-bg-opacity,1));--tw-text-opacity:1;color:rgb(4 120 87/var(--tw-text-opacity,1))}.choice-btn[data-astro-cid-hobfb6a2].selected-wrong{--tw-border-opacity:1;border-color:rgb(244 63 94/var(--tw-border-opacity,1));--tw-bg-opacity:1;background-color:rgb(255 241 242/var(--tw-bg-opacity,1));--tw-text-opacity:1;color:rgb(190 18 60/var(--tw-text-opacity,1));opacity:.5}.location-marker[data-astro-cid-hobfb6a2]{z-index:10;cursor:pointer;--tw-border-opacity:1;border-width:2px;border-color:rgb(139 69 19/var(--tw-border-opacity,1));--tw-bg-opacity:1;background-color:rgb(255 255 255/var(--tw-bg-opacity,1));--tw-text-opacity:1;width:3rem;height:3rem;color:rgb(139 69 19/var(--tw-text-opacity,1));--tw-shadow:0 10px 15px -3px #0000001a, 0 4px 6px -4px #0000001a;--tw-shadow-colored:0 10px 15px -3px var(--tw-shadow-color), 0 4px 6px -4px var(--tw-shadow-color);box-shadow:var(--tw-ring-offset-shadow,0 0 #0000), var(--tw-ring-shadow,0 0 #0000), var(--tw-shadow);border-radius:9999px;justify-content:center;align-items:center;transition-property:all;transition-duration:.15s;transition-timing-function:cubic-bezier(.4,0,.2,1);display:flex;position:absolute}.location-marker[data-astro-cid-hobfb6a2]:hover{--tw-scale-x:1.1;--tw-scale-y:1.1;transform:translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));--tw-bg-opacity:1;background-color:rgb(254 243 199/var(--tw-bg-opacity,1))}.location-marker[data-astro-cid-hobfb6a2].completed{--tw-border-opacity:1;border-color:rgb(4 120 87/var(--tw-border-opacity,1));--tw-bg-opacity:1;background-color:rgb(16 185 129/var(--tw-bg-opacity,1));--tw-text-opacity:1;color:rgb(255 255 255/var(--tw-text-opacity,1))}@keyframes pulse{50%{opacity:.5}}.location-marker[data-astro-cid-hobfb6a2].active{--tw-ring-offset-shadow:var(--tw-ring-inset) 0 0 0 var(--tw-ring-offset-width) var(--tw-ring-offset-color);--tw-ring-shadow:var(--tw-ring-inset) 0 0 0 calc(4px + var(--tw-ring-offset-width)) var(--tw-ring-color);box-shadow:var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow,0 0 #0000);--tw-ring-opacity:1;--tw-ring-color:rgb(251 191 36/var(--tw-ring-opacity,1));animation:2s cubic-bezier(.4,0,.6,1) infinite pulse}.animate-spin-slow[data-astro-cid-hobfb6a2]{animation:3s linear infinite spin}@keyframes spin{0%{transform:rotate(0)}to{transform:rotate(360deg)}}
+</style><style>[data-astro-transition-scope="astro-l25zdozq-1"] { view-transition-name: logo; }@layer astro { ::view-transition-old(logo) { 
+	animation-duration: 180ms;
+	animation-timing-function: cubic-bezier(0.76, 0, 0.24, 1);
+	animation-fill-mode: both;
+	animation-name: astroFadeOut; }::view-transition-new(logo) { 
+	animation-duration: 180ms;
+	animation-timing-function: cubic-bezier(0.76, 0, 0.24, 1);
+	animation-fill-mode: both;
+	animation-name: astroFadeIn; }[data-astro-transition=back]::view-transition-old(logo) { 
+	animation-duration: 180ms;
+	animation-timing-function: cubic-bezier(0.76, 0, 0.24, 1);
+	animation-fill-mode: both;
+	animation-name: astroFadeOut; }[data-astro-transition=back]::view-transition-new(logo) { 
+	animation-duration: 180ms;
+	animation-timing-function: cubic-bezier(0.76, 0, 0.24, 1);
+	animation-fill-mode: both;
+	animation-name: astroFadeIn; } }[data-astro-transition-fallback="old"] [data-astro-transition-scope="astro-l25zdozq-1"],
+			[data-astro-transition-fallback="old"][data-astro-transition-scope="astro-l25zdozq-1"] { 
+	animation-duration: 180ms;
+	animation-timing-function: cubic-bezier(0.76, 0, 0.24, 1);
+	animation-fill-mode: both;
+	animation-name: astroFadeOut; }[data-astro-transition-fallback="new"] [data-astro-transition-scope="astro-l25zdozq-1"],
+			[data-astro-transition-fallback="new"][data-astro-transition-scope="astro-l25zdozq-1"] { 
+	animation-duration: 180ms;
+	animation-timing-function: cubic-bezier(0.76, 0, 0.24, 1);
+	animation-fill-mode: both;
+	animation-name: astroFadeIn; }[data-astro-transition=back][data-astro-transition-fallback="old"] [data-astro-transition-scope="astro-l25zdozq-1"],
+			[data-astro-transition=back][data-astro-transition-fallback="old"][data-astro-transition-scope="astro-l25zdozq-1"] { 
+	animation-duration: 180ms;
+	animation-timing-function: cubic-bezier(0.76, 0, 0.24, 1);
+	animation-fill-mode: both;
+	animation-name: astroFadeOut; }[data-astro-transition=back][data-astro-transition-fallback="new"] [data-astro-transition-scope="astro-l25zdozq-1"],
+			[data-astro-transition=back][data-astro-transition-fallback="new"][data-astro-transition-scope="astro-l25zdozq-1"] { 
+	animation-duration: 180ms;
+	animation-timing-function: cubic-bezier(0.76, 0, 0.24, 1);
+	animation-fill-mode: both;
+	animation-name: astroFadeIn; }</style><style>[data-astro-transition-scope="astro-ss5qawsi-2"] { view-transition-name: nav-explorers; }@layer astro { ::view-transition-old(nav-explorers) { 
+	animation-duration: 180ms;
+	animation-timing-function: cubic-bezier(0.76, 0, 0.24, 1);
+	animation-fill-mode: both;
+	animation-name: astroFadeOut; }::view-transition-new(nav-explorers) { 
+	animation-duration: 180ms;
+	animation-timing-function: cubic-bezier(0.76, 0, 0.24, 1);
+	animation-fill-mode: both;
+	animation-name: astroFadeIn; }[data-astro-transition=back]::view-transition-old(nav-explorers) { 
+	animation-duration: 180ms;
+	animation-timing-function: cubic-bezier(0.76, 0, 0.24, 1);
+	animation-fill-mode: both;
+	animation-name: astroFadeOut; }[data-astro-transition=back]::view-transition-new(nav-explorers) { 
+	animation-duration: 180ms;
+	animation-timing-function: cubic-bezier(0.76, 0, 0.24, 1);
+	animation-fill-mode: both;
+	animation-name: astroFadeIn; } }[data-astro-transition-fallback="old"] [data-astro-transition-scope="astro-ss5qawsi-2"],
+			[data-astro-transition-fallback="old"][data-astro-transition-scope="astro-ss5qawsi-2"] { 
+	animation-duration: 180ms;
+	animation-timing-function: cubic-bezier(0.76, 0, 0.24, 1);
+	animation-fill-mode: both;
+	animation-name: astroFadeOut; }[data-astro-transition-fallback="new"] [data-astro-transition-scope="astro-ss5qawsi-2"],
+			[data-astro-transition-fallback="new"][data-astro-transition-scope="astro-ss5qawsi-2"] { 
+	animation-duration: 180ms;
+	animation-timing-function: cubic-bezier(0.76, 0, 0.24, 1);
+	animation-fill-mode: both;
+	animation-name: astroFadeIn; }[data-astro-transition=back][data-astro-transition-fallback="old"] [data-astro-transition-scope="astro-ss5qawsi-2"],
+			[data-astro-transition=back][data-astro-transition-fallback="old"][data-astro-transition-scope="astro-ss5qawsi-2"] { 
+	animation-duration: 180ms;
+	animation-timing-function: cubic-bezier(0.76, 0, 0.24, 1);
+	animation-fill-mode: both;
+	animation-name: astroFadeOut; }[data-astro-transition=back][data-astro-transition-fallback="new"] [data-astro-transition-scope="astro-ss5qawsi-2"],
+			[data-astro-transition=back][data-astro-transition-fallback="new"][data-astro-transition-scope="astro-ss5qawsi-2"] { 
+	animation-duration: 180ms;
+	animation-timing-function: cubic-bezier(0.76, 0, 0.24, 1);
+	animation-fill-mode: both;
+	animation-name: astroFadeIn; }</style><style>[data-astro-transition-scope="astro-ss5qawsi-3"] { view-transition-name: nav-adventurers; }@layer astro { ::view-transition-old(nav-adventurers) { 
+	animation-duration: 180ms;
+	animation-timing-function: cubic-bezier(0.76, 0, 0.24, 1);
+	animation-fill-mode: both;
+	animation-name: astroFadeOut; }::view-transition-new(nav-adventurers) { 
+	animation-duration: 180ms;
+	animation-timing-function: cubic-bezier(0.76, 0, 0.24, 1);
+	animation-fill-mode: both;
+	animation-name: astroFadeIn; }[data-astro-transition=back]::view-transition-old(nav-adventurers) { 
+	animation-duration: 180ms;
+	animation-timing-function: cubic-bezier(0.76, 0, 0.24, 1);
+	animation-fill-mode: both;
+	animation-name: astroFadeOut; }[data-astro-transition=back]::view-transition-new(nav-adventurers) { 
+	animation-duration: 180ms;
+	animation-timing-function: cubic-bezier(0.76, 0, 0.24, 1);
+	animation-fill-mode: both;
+	animation-name: astroFadeIn; } }[data-astro-transition-fallback="old"] [data-astro-transition-scope="astro-ss5qawsi-3"],
+			[data-astro-transition-fallback="old"][data-astro-transition-scope="astro-ss5qawsi-3"] { 
+	animation-duration: 180ms;
+	animation-timing-function: cubic-bezier(0.76, 0, 0.24, 1);
+	animation-fill-mode: both;
+	animation-name: astroFadeOut; }[data-astro-transition-fallback="new"] [data-astro-transition-scope="astro-ss5qawsi-3"],
+			[data-astro-transition-fallback="new"][data-astro-transition-scope="astro-ss5qawsi-3"] { 
+	animation-duration: 180ms;
+	animation-timing-function: cubic-bezier(0.76, 0, 0.24, 1);
+	animation-fill-mode: both;
+	animation-name: astroFadeIn; }[data-astro-transition=back][data-astro-transition-fallback="old"] [data-astro-transition-scope="astro-ss5qawsi-3"],
+			[data-astro-transition=back][data-astro-transition-fallback="old"][data-astro-transition-scope="astro-ss5qawsi-3"] { 
+	animation-duration: 180ms;
+	animation-timing-function: cubic-bezier(0.76, 0, 0.24, 1);
+	animation-fill-mode: both;
+	animation-name: astroFadeOut; }[data-astro-transition=back][data-astro-transition-fallback="new"] [data-astro-transition-scope="astro-ss5qawsi-3"],
+			[data-astro-transition=back][data-astro-transition-fallback="new"][data-astro-transition-scope="astro-ss5qawsi-3"] { 
+	animation-duration: 180ms;
+	animation-timing-function: cubic-bezier(0.76, 0, 0.24, 1);
+	animation-fill-mode: both;
+	animation-name: astroFadeIn; }</style><style>[data-astro-transition-scope="astro-ss5qawsi-4"] { view-transition-name: nav-builders; }@layer astro { ::view-transition-old(nav-builders) { 
+	animation-duration: 180ms;
+	animation-timing-function: cubic-bezier(0.76, 0, 0.24, 1);
+	animation-fill-mode: both;
+	animation-name: astroFadeOut; }::view-transition-new(nav-builders) { 
+	animation-duration: 180ms;
+	animation-timing-function: cubic-bezier(0.76, 0, 0.24, 1);
+	animation-fill-mode: both;
+	animation-name: astroFadeIn; }[data-astro-transition=back]::view-transition-old(nav-builders) { 
+	animation-duration: 180ms;
+	animation-timing-function: cubic-bezier(0.76, 0, 0.24, 1);
+	animation-fill-mode: both;
+	animation-name: astroFadeOut; }[data-astro-transition=back]::view-transition-new(nav-builders) { 
+	animation-duration: 180ms;
+	animation-timing-function: cubic-bezier(0.76, 0, 0.24, 1);
+	animation-fill-mode: both;
+	animation-name: astroFadeIn; } }[data-astro-transition-fallback="old"] [data-astro-transition-scope="astro-ss5qawsi-4"],
+			[data-astro-transition-fallback="old"][data-astro-transition-scope="astro-ss5qawsi-4"] { 
+	animation-duration: 180ms;
+	animation-timing-function: cubic-bezier(0.76, 0, 0.24, 1);
+	animation-fill-mode: both;
+	animation-name: astroFadeOut; }[data-astro-transition-fallback="new"] [data-astro-transition-scope="astro-ss5qawsi-4"],
+			[data-astro-transition-fallback="new"][data-astro-transition-scope="astro-ss5qawsi-4"] { 
+	animation-duration: 180ms;
+	animation-timing-function: cubic-bezier(0.76, 0, 0.24, 1);
+	animation-fill-mode: both;
+	animation-name: astroFadeIn; }[data-astro-transition=back][data-astro-transition-fallback="old"] [data-astro-transition-scope="astro-ss5qawsi-4"],
+			[data-astro-transition=back][data-astro-transition-fallback="old"][data-astro-transition-scope="astro-ss5qawsi-4"] { 
+	animation-duration: 180ms;
+	animation-timing-function: cubic-bezier(0.76, 0, 0.24, 1);
+	animation-fill-mode: both;
+	animation-name: astroFadeOut; }[data-astro-transition=back][data-astro-transition-fallback="new"] [data-astro-transition-scope="astro-ss5qawsi-4"],
+			[data-astro-transition=back][data-astro-transition-fallback="new"][data-astro-transition-scope="astro-ss5qawsi-4"] { 
+	animation-duration: 180ms;
+	animation-timing-function: cubic-bezier(0.76, 0, 0.24, 1);
+	animation-fill-mode: both;
+	animation-name: astroFadeIn; }</style><style>[data-astro-transition-scope="astro-ss5qawsi-5"] { view-transition-name: nav-challengers; }@layer astro { ::view-transition-old(nav-challengers) { 
+	animation-duration: 180ms;
+	animation-timing-function: cubic-bezier(0.76, 0, 0.24, 1);
+	animation-fill-mode: both;
+	animation-name: astroFadeOut; }::view-transition-new(nav-challengers) { 
+	animation-duration: 180ms;
+	animation-timing-function: cubic-bezier(0.76, 0, 0.24, 1);
+	animation-fill-mode: both;
+	animation-name: astroFadeIn; }[data-astro-transition=back]::view-transition-old(nav-challengers) { 
+	animation-duration: 180ms;
+	animation-timing-function: cubic-bezier(0.76, 0, 0.24, 1);
+	animation-fill-mode: both;
+	animation-name: astroFadeOut; }[data-astro-transition=back]::view-transition-new(nav-challengers) { 
+	animation-duration: 180ms;
+	animation-timing-function: cubic-bezier(0.76, 0, 0.24, 1);
+	animation-fill-mode: both;
+	animation-name: astroFadeIn; } }[data-astro-transition-fallback="old"] [data-astro-transition-scope="astro-ss5qawsi-5"],
+			[data-astro-transition-fallback="old"][data-astro-transition-scope="astro-ss5qawsi-5"] { 
+	animation-duration: 180ms;
+	animation-timing-function: cubic-bezier(0.76, 0, 0.24, 1);
+	animation-fill-mode: both;
+	animation-name: astroFadeOut; }[data-astro-transition-fallback="new"] [data-astro-transition-scope="astro-ss5qawsi-5"],
+			[data-astro-transition-fallback="new"][data-astro-transition-scope="astro-ss5qawsi-5"] { 
+	animation-duration: 180ms;
+	animation-timing-function: cubic-bezier(0.76, 0, 0.24, 1);
+	animation-fill-mode: both;
+	animation-name: astroFadeIn; }[data-astro-transition=back][data-astro-transition-fallback="old"] [data-astro-transition-scope="astro-ss5qawsi-5"],
+			[data-astro-transition=back][data-astro-transition-fallback="old"][data-astro-transition-scope="astro-ss5qawsi-5"] { 
+	animation-duration: 180ms;
+	animation-timing-function: cubic-bezier(0.76, 0, 0.24, 1);
+	animation-fill-mode: both;
+	animation-name: astroFadeOut; }[data-astro-transition=back][data-astro-transition-fallback="new"] [data-astro-transition-scope="astro-ss5qawsi-5"],
+			[data-astro-transition=back][data-astro-transition-fallback="new"][data-astro-transition-scope="astro-ss5qawsi-5"] { 
+	animation-duration: 180ms;
+	animation-timing-function: cubic-bezier(0.76, 0, 0.24, 1);
+	animation-fill-mode: both;
+	animation-name: astroFadeIn; }</style><style>[data-astro-transition-scope="astro-ss5qawsi-6"] { view-transition-name: nav-pioneers; }@layer astro { ::view-transition-old(nav-pioneers) { 
+	animation-duration: 180ms;
+	animation-timing-function: cubic-bezier(0.76, 0, 0.24, 1);
+	animation-fill-mode: both;
+	animation-name: astroFadeOut; }::view-transition-new(nav-pioneers) { 
+	animation-duration: 180ms;
+	animation-timing-function: cubic-bezier(0.76, 0, 0.24, 1);
+	animation-fill-mode: both;
+	animation-name: astroFadeIn; }[data-astro-transition=back]::view-transition-old(nav-pioneers) { 
+	animation-duration: 180ms;
+	animation-timing-function: cubic-bezier(0.76, 0, 0.24, 1);
+	animation-fill-mode: both;
+	animation-name: astroFadeOut; }[data-astro-transition=back]::view-transition-new(nav-pioneers) { 
+	animation-duration: 180ms;
+	animation-timing-function: cubic-bezier(0.76, 0, 0.24, 1);
+	animation-fill-mode: both;
+	animation-name: astroFadeIn; } }[data-astro-transition-fallback="old"] [data-astro-transition-scope="astro-ss5qawsi-6"],
+			[data-astro-transition-fallback="old"][data-astro-transition-scope="astro-ss5qawsi-6"] { 
+	animation-duration: 180ms;
+	animation-timing-function: cubic-bezier(0.76, 0, 0.24, 1);
+	animation-fill-mode: both;
+	animation-name: astroFadeOut; }[data-astro-transition-fallback="new"] [data-astro-transition-scope="astro-ss5qawsi-6"],
+			[data-astro-transition-fallback="new"][data-astro-transition-scope="astro-ss5qawsi-6"] { 
+	animation-duration: 180ms;
+	animation-timing-function: cubic-bezier(0.76, 0, 0.24, 1);
+	animation-fill-mode: both;
+	animation-name: astroFadeIn; }[data-astro-transition=back][data-astro-transition-fallback="old"] [data-astro-transition-scope="astro-ss5qawsi-6"],
+			[data-astro-transition=back][data-astro-transition-fallback="old"][data-astro-transition-scope="astro-ss5qawsi-6"] { 
+	animation-duration: 180ms;
+	animation-timing-function: cubic-bezier(0.76, 0, 0.24, 1);
+	animation-fill-mode: both;
+	animation-name: astroFadeOut; }[data-astro-transition=back][data-astro-transition-fallback="new"] [data-astro-transition-scope="astro-ss5qawsi-6"],
+			[data-astro-transition=back][data-astro-transition-fallback="new"][data-astro-transition-scope="astro-ss5qawsi-6"] { 
+	animation-duration: 180ms;
+	animation-timing-function: cubic-bezier(0.76, 0, 0.24, 1);
+	animation-fill-mode: both;
+	animation-name: astroFadeIn; }</style></head><body class="min-h-screen transition-colors duration-300"><header class="sticky top-0 z-50 header-blur border-b"><div class="container"><nav class="flex items-center justify-between gap-3 sm:gap-6 py-3"><div class="flex items-center gap-3"><a href="/challengers/" class="flex items-center gap-2 px-3 py-1.5 rounded-full bg-zinc-100 dark:bg-zinc-800 hover:bg-zinc-200 dark:hover:bg-zinc-700 text-zinc-600 dark:text-zinc-300 transition-all hover:-translate-x-1 group animate-in slide-in-from-left-4 fade-in duration-300"><span class="material-symbols-outlined text-xl group-hover:scale-110 transition-transform" aria-hidden="true">arrow_back</span><span class="text-sm font-bold hidden sm:inline">Back</span></a><a data-astro-transition-scope="astro-l25zdozq-1" href="/" class="flex items-center text-2xl font-black uppercase tracking-tighter hover:opacity-80 transition-opacity"><span class="text-indigo-600 dark:text-indigo-400">RL</span></a></div><div class="hidden lg:flex items-center gap-2"><a data-astro-transition-scope="astro-ss5qawsi-2" href="/explorers/" class="nav-btn transition-all duration-300 border flex-col !py-1.5 !px-3 border-pink-200 dark:border-pink-700 hover:scale-105 hover:bg-gradient-to-r from-pink-50 to-rose-50 dark:from-pink-900/50 dark:to-rose-900/50 bg-white dark:bg-zinc-900"><div class="flex items-center gap-1.5"><span class="material-symbols-outlined text-base text-pink-500 " aria-hidden="true">star</span><span class="font-semibold text-xs xl:text-sm text-pink-600 dark:text-pink-400">Explorers</span></div><span class="text-[10px] text-zinc-500 dark:text-zinc-400 leading-tight hidden xl:block">3-5 Years</span></a><a data-astro-transition-scope="astro-ss5qawsi-3" href="/adventurers/" class="nav-btn transition-all duration-300 border flex-col !py-1.5 !px-3 border-sky-200 dark:border-sky-700 hover:scale-105 hover:bg-gradient-to-r from-sky-50 to-cyan-50 dark:from-sky-900/50 dark:to-cyan-900/50 bg-white dark:bg-zinc-900"><div class="flex items-center gap-1.5"><span class="material-symbols-outlined text-base text-sky-500 " aria-hidden="true">rocket_launch</span><span class="font-semibold text-xs xl:text-sm text-sky-600 dark:text-sky-400">Adventurers</span></div><span class="text-[10px] text-zinc-500 dark:text-zinc-400 leading-tight hidden xl:block">6-8 Years</span></a><a data-astro-transition-scope="astro-ss5qawsi-4" href="/builders/" class="nav-btn transition-all duration-300 border flex-col !py-1.5 !px-3 border-green-200 dark:border-green-700 hover:scale-105 hover:bg-gradient-to-r from-green-50 to-emerald-50 dark:from-green-900/50 dark:to-emerald-900/50 bg-white dark:bg-zinc-900"><div class="flex items-center gap-1.5"><span class="material-symbols-outlined text-base text-green-500 " aria-hidden="true">build</span><span class="font-semibold text-xs xl:text-sm text-green-600 dark:text-green-400">Builders</span></div><span class="text-[10px] text-zinc-500 dark:text-zinc-400 leading-tight hidden xl:block">9-11 Years</span></a><a data-astro-transition-scope="astro-ss5qawsi-5" href="/challengers/" class="nav-btn transition-all duration-300 border flex-col !py-1.5 !px-3 border-violet-200 dark:border-violet-700 ring-violet-400 ring-2 scale-105 font-bold bg-gradient-to-r from-violet-50 to-purple-50 dark:from-violet-900/50 dark:to-purple-900/50"><div class="flex items-center gap-1.5"><span class="material-symbols-outlined text-base text-violet-500 animate-bounce-soft" aria-hidden="true">bolt</span><span class="font-semibold text-xs xl:text-sm text-violet-600 dark:text-violet-400">Challengers</span></div><span class="text-[10px] text-zinc-500 dark:text-zinc-400 leading-tight hidden xl:block">12-14 Years</span></a><a data-astro-transition-scope="astro-ss5qawsi-6" href="/pioneers/" class="nav-btn transition-all duration-300 border flex-col !py-1.5 !px-3 border-orange-200 dark:border-orange-700 hover:scale-105 hover:bg-gradient-to-r from-orange-50 to-amber-50 dark:from-orange-900/50 dark:to-amber-900/50 bg-white dark:bg-zinc-900"><div class="flex items-center gap-1.5"><span class="material-symbols-outlined text-base text-orange-500 " aria-hidden="true">flag</span><span class="font-semibold text-xs xl:text-sm text-orange-600 dark:text-orange-400">Pioneers</span></div><span class="text-[10px] text-zinc-500 dark:text-zinc-400 leading-tight hidden xl:block">15-16 Years</span></a></div><div class="flex items-center gap-2 sm:gap-3"><!-- Combined Stats Pill --><div class="flex items-center h-9 sm:h-11 rounded-full overflow-hidden shadow-lg shadow-rose-500/20 hover:scale-105 transition-transform cursor-default select-none"><!-- Love Section --><div class="flex items-center h-full gap-2 px-3 sm:px-4 bg-gradient-to-r from-rose-500 to-pink-500 text-white text-xs sm:text-sm font-semibold" title="Total Love"><span class="text-sm sm:text-lg">❤️</span><span id="love-count">0</span></div><!-- Streak Section --><div class="hidden sm:flex items-center h-full gap-2 px-4 bg-gradient-to-r from-amber-500 to-orange-500 text-white text-sm font-semibold" title="Day Streak"><span class="text-lg animate-pulse">🔥</span><span id="streak-count">0</span></div></div><button id="theme-toggle" class="w-9 h-9 sm:w-11 sm:h-11 rounded-xl flex items-center justify-center bg-zinc-100 dark:bg-zinc-900 border border-zinc-200 dark:border-zinc-700 hover:border-indigo-500 hover:scale-105 transition-all duration-200 cursor-pointer overflow-hidden relative" aria-label="Toggle theme" data-astro-cid-l6lhmie6><span class="theme-sun absolute transition-all duration-300" data-astro-cid-l6lhmie6><span class="material-symbols-outlined text-2xl" aria-hidden="true">light_mode</span></span><span class="theme-moon absolute transition-all duration-300 opacity-0 rotate-[-90deg] scale-50" data-astro-cid-l6lhmie6><span class="material-symbols-outlined text-2xl" aria-hidden="true">dark_mode</span></span></button><script>
+  function initThemeToggle() {
+    const toggle = document.getElementById('theme-toggle');
+    if (!toggle) return;
+
+    const html = document.documentElement;
+
+    const setTheme = (theme) => {
+      html.classList.toggle('dark', theme === 'dark');
+      localStorage.setItem('theme', theme);
+    };
+
+    // Clone to remove old listeners
+    const newToggle = toggle.cloneNode(true);
+    toggle.parentNode.replaceChild(newToggle, toggle);
+
+    newToggle.addEventListener('click', () => {
+      const newTheme = html.classList.contains('dark') ? 'light' : 'dark';
+      setTheme(newTheme);
+    });
+  }
+
+  // Handle both initial load and View Transitions
+  document.addEventListener('DOMContentLoaded', initThemeToggle);
+  document.addEventListener('astro:page-load', initThemeToggle);
+</script><!-- Settings Dropdown --><div class="relative group"><button id="settings-btn" class="w-9 h-9 sm:w-11 sm:h-11 rounded-xl flex items-center justify-center bg-zinc-100 dark:bg-zinc-900 border border-zinc-200 dark:border-zinc-700 hover:border-indigo-500 hover:scale-105 transition-all duration-200 cursor-pointer" aria-label="Settings"><span class="material-symbols-outlined text-xl" aria-hidden="true">settings</span></button><!-- Dropdown Menu --><div class="absolute right-0 top-full mt-2 w-48 bg-white dark:bg-zinc-900 rounded-xl shadow-xl border border-zinc-100 dark:border-zinc-800 p-2 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 transform origin-top-right scale-95 group-hover:scale-100 z-50"><button id="reset-btn" class="w-full flex items-center gap-2 px-3 py-2 text-sm font-medium text-rose-500 hover:bg-rose-50 dark:hover:bg-rose-900/20 rounded-lg transition-colors"><span class="material-symbols-outlined text-xl" aria-hidden="true">refresh</span>Reset Progress</button></div></div></div></nav></div></header><script>
+  function initNav() {
+    const loveCount = document.getElementById('love-count');
+    const streakCount = document.getElementById('streak-count');
+    const resetBtn = document.getElementById('reset-btn');
+
+    // Read from localStorage directly (nanostores persistent format)
+    const getProgress = () => {
+      try {
+        const completed = JSON.parse(localStorage.getItem('userProgress:completed') || '[]');
+        const streak = parseInt(localStorage.getItem('userProgress:streak') || '3');
+        return { completed, streak };
+      } catch {
+        return { completed: [], streak: 3 };
+      }
+    };
+
+    // Update UI
+    const updateUI = () => {
+      const progress = getProgress();
+      if (loveCount) {
+        // Each activity is worth 50 love
+        const score = progress.completed.length * 50;
+        loveCount.textContent = score.toString();
+      }
+      if (streakCount) {
+        streakCount.textContent = progress.streak.toString();
+      }
+    };
+
+    // Initial update
+    updateUI();
+
+    // Listen for storage changes (when other tabs or scripts update)
+    window.addEventListener('storage', updateUI);
+
+    // Also update on custom event (when activities are completed in the same tab)
+    window.addEventListener('progress-updated', updateUI);
+
+    // Reset Logic - clone to remove old listeners
+    if (resetBtn) {
+      const newResetBtn = resetBtn.cloneNode(true);
+      resetBtn.parentNode.replaceChild(newResetBtn, resetBtn);
+
+      newResetBtn.addEventListener('click', () => {
+        if (confirm('Are you sure you want to reset all progress? This cannot be undone.')) {
+          localStorage.setItem('userProgress:completed', '[]');
+          localStorage.setItem('userProgress:streak', '3');
+          localStorage.setItem('userProgress:unlocked', '["colors","colors-flashcards"]');
+          window.location.reload();
+        }
+      });
+    }
+  }
+
+  // Handle both initial load and View Transitions
+  document.addEventListener('DOMContentLoaded', initNav);
+  document.addEventListener('astro:page-load', initNav);
+</script><main class="min-h-screen py-8 pb-32 relative overflow-hidden bg-cyan-900" data-astro-cid-hobfb6a2><!-- Ocean Pattern --><div class="absolute inset-0 opacity-20 pointer-events-none" style="background-image: radial-gradient(circle at 2px 2px, rgba(255,255,255,0.15) 1px, transparent 0); background-size: 40px 40px;" data-astro-cid-hobfb6a2></div><!-- Island Shape (CSS Art) --><div class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-[800px] h-[800px] bg-amber-100 rounded-full opacity-10 blur-3xl pointer-events-none" data-astro-cid-hobfb6a2></div><div class="container mx-auto px-4 relative max-w-5xl h-full flex flex-col" data-astro-cid-hobfb6a2><div class="game-container w-full" data-id="irony-island" data-quests="[{&quot;id&quot;:&quot;q1&quot;,&quot;location&quot;:&quot;The Fire Station&quot;,&quot;icon&quot;:&quot;local_fire_department&quot;,&quot;title&quot;:&quot;A Burning Surprise&quot;,&quot;scenario&quot;:&quot;You walk past the town's fire station and notice smoke billowing out of the windows. The fire station itself is on fire.&quot;,&quot;correctType&quot;:&quot;situational&quot;,&quot;options&quot;:[{&quot;type&quot;:&quot;verbal&quot;,&quot;label&quot;:&quot;Verbal Irony&quot;,&quot;explanation&quot;:&quot;No one said anything contrary to what they meant.&quot;},{&quot;type&quot;:&quot;situational&quot;,&quot;label&quot;:&quot;Situational Irony&quot;,&quot;explanation&quot;:&quot;Correct! We expect a fire station to put out fires, not to be on fire itself. The outcome is the opposite of what is expected.&quot;},{&quot;type&quot;:&quot;dramatic&quot;,&quot;label&quot;:&quot;Dramatic Irony&quot;,&quot;explanation&quot;:&quot;You didn't know something the characters didn't. You saw the event directly.&quot;}]},{&quot;id&quot;:&quot;q2&quot;,&quot;location&quot;:&quot;The Theater&quot;,&quot;icon&quot;:&quot;theater_comedy&quot;,&quot;title&quot;:&quot;Romeo's Mistake&quot;,&quot;scenario&quot;:&quot;On stage, Romeo drinks poison because he thinks Juliet is dead. But you, the audience, know she is actually just sleeping.&quot;,&quot;correctType&quot;:&quot;dramatic&quot;,&quot;options&quot;:[{&quot;type&quot;:&quot;verbal&quot;,&quot;label&quot;:&quot;Verbal Irony&quot;,&quot;explanation&quot;:&quot;Romeo isn't saying anything sarcastic here.&quot;},{&quot;type&quot;:&quot;situational&quot;,&quot;label&quot;:&quot;Situational Irony&quot;,&quot;explanation&quot;:&quot;While tragic, the key here is that YOU know something the character doesn't.&quot;},{&quot;type&quot;:&quot;dramatic&quot;,&quot;label&quot;:&quot;Dramatic Irony&quot;,&quot;explanation&quot;:&quot;Correct! The audience has information (Juliet is alive) that the character (Romeo) does not, creating tension.&quot;}]},{&quot;id&quot;:&quot;q3&quot;,&quot;location&quot;:&quot;The Stormy Pier&quot;,&quot;icon&quot;:&quot;tsunami&quot;,&quot;title&quot;:&quot;Nice Weather&quot;,&quot;scenario&quot;:&quot;Two friends are standing in a pouring rainstorm without umbrellas, soaking wet. One says to the other, 'Wow, what a beautiful day for a picnic!'&quot;,&quot;correctType&quot;:&quot;verbal&quot;,&quot;options&quot;:[{&quot;type&quot;:&quot;verbal&quot;,&quot;label&quot;:&quot;Verbal Irony&quot;,&quot;explanation&quot;:&quot;Correct! The speaker says the opposite of what they mean (sarcasm) to emphasize how bad the weather is.&quot;},{&quot;type&quot;:&quot;situational&quot;,&quot;label&quot;:&quot;Situational Irony&quot;,&quot;explanation&quot;:&quot;The situation is straightforward; it's the comment that contrasts with reality.&quot;},{&quot;type&quot;:&quot;dramatic&quot;,&quot;label&quot;:&quot;Dramatic Irony&quot;,&quot;explanation&quot;:&quot;Both characters know it's raining; there is no hidden secret.&quot;}]},{&quot;id&quot;:&quot;q4&quot;,&quot;location&quot;:&quot;The Dentist&quot;,&quot;icon&quot;:&quot;dentistry&quot;,&quot;title&quot;:&quot;Sweet Tooth&quot;,&quot;scenario&quot;:&quot;The dentist, who spends all day telling kids not to eat candy, is discovered secretly eating a giant bag of gummy bears in the break room.&quot;,&quot;correctType&quot;:&quot;situational&quot;,&quot;options&quot;:[{&quot;type&quot;:&quot;verbal&quot;,&quot;label&quot;:&quot;Verbal Irony&quot;,&quot;explanation&quot;:&quot;The dentist isn't speaking.&quot;},{&quot;type&quot;:&quot;situational&quot;,&quot;label&quot;:&quot;Situational Irony&quot;,&quot;explanation&quot;:&quot;Correct! You expect a dentist to have healthy habits, so seeing them binge on candy is the opposite of expectation.&quot;},{&quot;type&quot;:&quot;dramatic&quot;,&quot;label&quot;:&quot;Dramatic Irony&quot;,&quot;explanation&quot;:&quot;This isn't about audience knowledge; it's about the contradiction in the dentist's actions.&quot;}]}]" data-astro-cid-hobfb6a2><!-- Header --><div class="flex flex-col md:flex-row items-center justify-between gap-4 mb-8" data-astro-cid-hobfb6a2><div data-astro-cid-hobfb6a2><div class="flex items-center gap-3 mb-2" data-astro-cid-hobfb6a2><div class="p-2 bg-amber-100 rounded-lg shadow-lg" data-astro-cid-hobfb6a2><span class="material-symbols-outlined text-amber-700 text-3xl" data-astro-cid-hobfb6a2>landscape</span></div><h1 class="text-3xl font-black text-white tracking-tight drop-shadow-md" data-astro-cid-hobfb6a2>Irony Island</h1></div><p class="text-cyan-100 font-medium drop-shadow-sm" data-astro-cid-hobfb6a2>Navigate the seas of sarcasm and hidden meanings</p></div><div class="bg-white/10 backdrop-blur-md px-6 py-3 rounded-2xl border border-white/20" data-astro-cid-hobfb6a2><div class="flex items-center gap-3" data-astro-cid-hobfb6a2><span class="text-xs font-bold text-cyan-200 uppercase" data-astro-cid-hobfb6a2>Explored</span><span id="progress-text" class="text-2xl font-black text-white" data-astro-cid-hobfb6a2>0/4</span></div></div></div><!-- Main Map Area --><div class="relative w-full aspect-[16/9] bg-[#f2e6d5] rounded-3xl overflow-hidden shadow-2xl border-4 border-[#e6d0b3]" data-astro-cid-hobfb6a2><!-- Interactive Map Elements --><div class="absolute inset-0 bg-[url('/assets/parchment-texture.png')] opacity-30 mix-blend-multiply pointer-events-none" data-astro-cid-hobfb6a2></div><!-- Map Path (SVG) --><svg class="absolute inset-0 w-full h-full pointer-events-none opacity-40" viewBox="0 0 800 450" data-astro-cid-hobfb6a2><path d="M150,350 Q300,400 400,225 T650,150" fill="none" stroke="#8b4513" stroke-width="3" stroke-dasharray="10,5" data-astro-cid-hobfb6a2></path></svg><!-- Locations (Placed absolutely) --><div id="map-locations" data-astro-cid-hobfb6a2><!-- JS will place these --></div><!-- Ship / Avatar --><div id="player-ship" class="absolute w-16 h-16 transition-all duration-1000 ease-in-out z-20 flex flex-col items-center justify-center transform hover:scale-110 cursor-pointer" style="left: 10%; top: 70%;" data-astro-cid-hobfb6a2><span class="material-symbols-outlined text-5xl text-red-600 drop-shadow-lg animate-bounce" data-astro-cid-hobfb6a2>sailing</span><div class="bg-black/50 text-white text-[10px] px-2 py-0.5 rounded-full backdrop-blur-sm -mt-1 font-bold" data-astro-cid-hobfb6a2>YOU</div></div><!-- Quest Modal/Overlay --><div id="quest-overlay" class="absolute inset-0 bg-black/60 backdrop-blur-sm z-50 hidden items-center justify-center p-4" data-astro-cid-hobfb6a2><div class="bg-white rounded-3xl p-8 max-w-2xl w-full shadow-2xl transform transition-all scale-100" data-astro-cid-hobfb6a2><div class="flex justify-between items-start mb-6" data-astro-cid-hobfb6a2><div class="flex items-center gap-4" data-astro-cid-hobfb6a2><div class="p-3 bg-indigo-100 rounded-2xl text-indigo-600" data-astro-cid-hobfb6a2><span id="quest-icon" class="material-symbols-outlined text-3xl" data-astro-cid-hobfb6a2>question_mark</span></div><div data-astro-cid-hobfb6a2><span class="text-xs font-bold text-indigo-500 uppercase tracking-wider block mb-1" data-astro-cid-hobfb6a2>Current Location</span><h2 id="quest-location" class="text-2xl font-black text-slate-800" data-astro-cid-hobfb6a2>Location Name</h2></div></div><!-- Close button for visual consistency, though we force choice --></div><div class="bg-indigo-50 rounded-xl p-6 mb-8 border border-indigo-100" data-astro-cid-hobfb6a2><h3 id="quest-title" class="text-lg font-bold text-indigo-900 mb-2" data-astro-cid-hobfb6a2>Scenario Title</h3><p id="quest-scenario" class="text-indigo-800 text-lg leading-relaxed" data-astro-cid-hobfb6a2>Scenario text...</p></div><div class="grid grid-cols-1 md:grid-cols-3 gap-4 mb-4" data-astro-cid-hobfb6a2><button class="choice-btn" data-type="verbal" data-astro-cid-hobfb6a2><span class="material-symbols-outlined text-3xl mb-2 block" data-astro-cid-hobfb6a2>record_voice_over</span><span class="font-bold block" data-astro-cid-hobfb6a2>Verbal Irony</span><span class="text-xs text-slate-500 mt-1 block font-normal" data-astro-cid-hobfb6a2>(Sarcasm)</span></button><button class="choice-btn" data-type="situational" data-astro-cid-hobfb6a2><span class="material-symbols-outlined text-3xl mb-2 block" data-astro-cid-hobfb6a2>campaign</span><span class="font-bold block" data-astro-cid-hobfb6a2>Situational Irony</span><span class="text-xs text-slate-500 mt-1 block font-normal" data-astro-cid-hobfb6a2>(Expectation vs Reality)</span></button><button class="choice-btn" data-type="dramatic" data-astro-cid-hobfb6a2><span class="material-symbols-outlined text-3xl mb-2 block" data-astro-cid-hobfb6a2>theater_comedy</span><span class="font-bold block" data-astro-cid-hobfb6a2>Dramatic Irony</span><span class="text-xs text-slate-500 mt-1 block font-normal" data-astro-cid-hobfb6a2>(Audience Knows)</span></button></div><div id="feedback-msg" class="hidden mt-4 p-4 rounded-xl text-center font-medium" data-astro-cid-hobfb6a2></div><button id="continue-btn" class="hidden w-full mt-4 py-3 bg-indigo-600 hover:bg-indigo-700 text-white rounded-xl font-bold shadow-lg shadow-indigo-500/20 transition-all" data-astro-cid-hobfb6a2>Continue Journey</button></div></div><!-- Victory Overlay --><div id="victory-screen" class="absolute inset-0 bg-cyan-900/90 backdrop-blur-md z-50 hidden flex-col items-center justify-center text-center p-8" data-astro-cid-hobfb6a2><span class="material-symbols-outlined text-8xl text-yellow-400 mb-6 animate-spin-slow" data-astro-cid-hobfb6a2>stars</span><h2 class="text-5xl font-black text-white mb-4" data-astro-cid-hobfb6a2>Island Explored!</h2><p class="text-2xl text-cyan-200 mb-8 max-w-xl" data-astro-cid-hobfb6a2>You've mastered the nuances of irony. The literary seas are safe once more.</p><a href="/challengers/" class="px-8 py-4 bg-white text-indigo-900 rounded-xl font-bold text-xl shadow-xl hover:scale-105 transition-transform" data-astro-cid-hobfb6a2>Return to Menu</a></div></div></div></div></main><script>
+      if ('serviceWorker' in navigator) {
+        // Unregister all service workers to prevent stale content issues
+        navigator.serviceWorker.getRegistrations().then((registrations) => {
+          for (const registration of registrations) {
+            registration.unregister();
+          }
+        });
+      }
+    </script></body></html><script type="module" src="/assets/irony-island.astro_astro_type_script_index_0_lang.cMuen89a.js"></script>

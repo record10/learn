@@ -1,0 +1,338 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><meta name="description" content="Gamified learning platform for ages 3-16"><meta name="theme-color" content="#4f46e5"><link rel="canonical" href="https://learn.record10.com/challengers/argument-architect/"><meta name="generator" content="Astro v7.1.1"><!-- Open Graph / Facebook --><meta property="og:type" content="website"><meta property="og:url" content="https://learn.record10.com/challengers/argument-architect/"><meta property="og:title" content="Argument Architect | Record Learn"><meta property="og:description" content="Gamified learning platform for ages 3-16"><meta property="og:image" content="https://learn.record10.com/favicon.svg"><!-- Twitter --><meta property="twitter:card" content="summary_large_image"><meta property="twitter:url" content="https://learn.record10.com/challengers/argument-architect/"><meta property="twitter:title" content="Argument Architect | Record Learn"><meta property="twitter:description" content="Gamified learning platform for ages 3-16"><meta property="twitter:image" content="https://learn.record10.com/favicon.svg"><link rel="manifest" href="/manifest.json"><!-- Google Material Symbols (self-hosted) --><link rel="icon" type="image/svg+xml" href="/favicon.svg"><title>Argument Architect | Record Learn | Record Learn</title><meta name="astro-view-transitions-enabled" content="true"><meta name="astro-view-transitions-fallback" content="animate"><script type="module" src="/assets/ClientRouter.astro_astro_type_script_index_0_lang.6Spq5I16.js"></script><!-- Prevent flash of wrong theme --><script>
+      // Apply theme on initial load
+      (function () {
+        const theme =
+          localStorage.getItem('theme') ||
+          (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
+        if (theme === 'dark') {
+          document.documentElement.classList.add('dark');
+        }
+      })();
+
+      // Preserve theme during View Transitions
+      document.addEventListener('astro:before-swap', (event) => {
+        const isDark = document.documentElement.classList.contains('dark');
+        if (isDark) {
+          event.newDocument.documentElement.classList.add('dark');
+        }
+      });
+
+      // Re-apply theme after swap (safety net)
+      document.addEventListener('astro:after-swap', () => {
+        const theme = localStorage.getItem('theme');
+        if (theme === 'dark') {
+          document.documentElement.classList.add('dark');
+        } else if (theme === 'light') {
+          document.documentElement.classList.remove('dark');
+        }
+      });
+    </script><link rel="stylesheet" href="/assets/Nav.Di0ZGAG-.css"><style>.slot[data-astro-cid-spqksqwp]{--tw-border-opacity:1;border-style:dashed;border-width:2px;border-color:rgb(212 212 216/var(--tw-border-opacity,1));border-radius:.75rem;min-height:100px;padding:1rem;transition-property:all;transition-duration:.15s;transition-timing-function:cubic-bezier(.4,0,.2,1);position:relative}.slot[data-astro-cid-spqksqwp]:is(.dark *){--tw-border-opacity:1;border-color:rgb(63 63 70/var(--tw-border-opacity,1))}.slot[data-astro-cid-spqksqwp].drag-over{--tw-scale-x:1.02;--tw-scale-y:1.02;transform:translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));--tw-border-opacity:1;border-color:rgb(129 140 248/var(--tw-border-opacity,1));--tw-bg-opacity:1;background-color:rgb(238 242 255/var(--tw-bg-opacity,1))}.slot[data-astro-cid-spqksqwp].drag-over:is(.dark *){background-color:#312e8133}.slot[data-astro-cid-spqksqwp].correct{--tw-border-opacity:1;border-style:solid;border-color:rgb(52 211 153/var(--tw-border-opacity,1));--tw-bg-opacity:1;background-color:rgb(236 253 245/var(--tw-bg-opacity,1))}.slot[data-astro-cid-spqksqwp].correct:is(.dark *){background-color:#064e3b33}.slot[data-astro-cid-spqksqwp].correct{animation:.5s ease-in-out pulse-green}.slot[data-astro-cid-spqksqwp].wrong{--tw-border-opacity:1;border-style:solid;border-color:rgb(251 113 133/var(--tw-border-opacity,1));--tw-bg-opacity:1;background-color:rgb(255 241 242/var(--tw-bg-opacity,1))}.slot[data-astro-cid-spqksqwp].wrong:is(.dark *){background-color:#88133733}.slot[data-astro-cid-spqksqwp].wrong{animation:.4s ease-in-out shake}.block-card[data-astro-cid-spqksqwp]{cursor:grab;touch-action:none;user-select:none;--tw-shadow:0 1px 2px 0 #0000000d;--tw-shadow-colored:0 1px 2px 0 var(--tw-shadow-color);box-shadow:var(--tw-ring-offset-shadow,0 0 #0000), var(--tw-ring-shadow,0 0 #0000), var(--tw-shadow);border-width:1px;border-radius:.5rem;padding:.75rem;font-size:.875rem;font-weight:500;line-height:1.25rem;transition-property:all;transition-duration:.15s;transition-timing-function:cubic-bezier(.4,0,.2,1)}.block-card[data-astro-cid-spqksqwp]:hover{--tw-translate-y:-2px;transform:translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));--tw-shadow:0 4px 6px -1px #0000001a, 0 2px 4px -2px #0000001a;--tw-shadow-colored:0 4px 6px -1px var(--tw-shadow-color), 0 2px 4px -2px var(--tw-shadow-color);box-shadow:var(--tw-ring-offset-shadow,0 0 #0000), var(--tw-ring-shadow,0 0 #0000), var(--tw-shadow)}.block-card[data-astro-cid-spqksqwp]:active{cursor:grabbing}.block-card[data-astro-cid-spqksqwp].dragging{z-index:50;--tw-rotate:2deg;--tw-scale-x:1.05;--tw-scale-y:1.05;transform:translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));opacity:.5}.block-card[data-astro-cid-spqksqwp].placed{cursor:default;--tw-shadow:0 0 #0000;--tw-shadow-colored:0 0 #0000;box-shadow:var(--tw-ring-offset-shadow,0 0 #0000), var(--tw-ring-shadow,0 0 #0000), var(--tw-shadow)}.block-card[data-astro-cid-spqksqwp].placed:hover{--tw-translate-y:0px;transform:translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y))}@keyframes shake{0%,to{transform:translate(0)}25%{transform:translate(-4px)}75%{transform:translate(4px)}}@keyframes pulse-green{0%{transform:scale(1)}50%{transform:scale(1.03);box-shadow:0 0 20px #10b98133}to{transform:scale(1)}}
+</style><style>[data-astro-transition-scope="astro-l25zdozq-1"] { view-transition-name: logo; }@layer astro { ::view-transition-old(logo) { 
+	animation-duration: 180ms;
+	animation-timing-function: cubic-bezier(0.76, 0, 0.24, 1);
+	animation-fill-mode: both;
+	animation-name: astroFadeOut; }::view-transition-new(logo) { 
+	animation-duration: 180ms;
+	animation-timing-function: cubic-bezier(0.76, 0, 0.24, 1);
+	animation-fill-mode: both;
+	animation-name: astroFadeIn; }[data-astro-transition=back]::view-transition-old(logo) { 
+	animation-duration: 180ms;
+	animation-timing-function: cubic-bezier(0.76, 0, 0.24, 1);
+	animation-fill-mode: both;
+	animation-name: astroFadeOut; }[data-astro-transition=back]::view-transition-new(logo) { 
+	animation-duration: 180ms;
+	animation-timing-function: cubic-bezier(0.76, 0, 0.24, 1);
+	animation-fill-mode: both;
+	animation-name: astroFadeIn; } }[data-astro-transition-fallback="old"] [data-astro-transition-scope="astro-l25zdozq-1"],
+			[data-astro-transition-fallback="old"][data-astro-transition-scope="astro-l25zdozq-1"] { 
+	animation-duration: 180ms;
+	animation-timing-function: cubic-bezier(0.76, 0, 0.24, 1);
+	animation-fill-mode: both;
+	animation-name: astroFadeOut; }[data-astro-transition-fallback="new"] [data-astro-transition-scope="astro-l25zdozq-1"],
+			[data-astro-transition-fallback="new"][data-astro-transition-scope="astro-l25zdozq-1"] { 
+	animation-duration: 180ms;
+	animation-timing-function: cubic-bezier(0.76, 0, 0.24, 1);
+	animation-fill-mode: both;
+	animation-name: astroFadeIn; }[data-astro-transition=back][data-astro-transition-fallback="old"] [data-astro-transition-scope="astro-l25zdozq-1"],
+			[data-astro-transition=back][data-astro-transition-fallback="old"][data-astro-transition-scope="astro-l25zdozq-1"] { 
+	animation-duration: 180ms;
+	animation-timing-function: cubic-bezier(0.76, 0, 0.24, 1);
+	animation-fill-mode: both;
+	animation-name: astroFadeOut; }[data-astro-transition=back][data-astro-transition-fallback="new"] [data-astro-transition-scope="astro-l25zdozq-1"],
+			[data-astro-transition=back][data-astro-transition-fallback="new"][data-astro-transition-scope="astro-l25zdozq-1"] { 
+	animation-duration: 180ms;
+	animation-timing-function: cubic-bezier(0.76, 0, 0.24, 1);
+	animation-fill-mode: both;
+	animation-name: astroFadeIn; }</style><style>[data-astro-transition-scope="astro-ss5qawsi-2"] { view-transition-name: nav-explorers; }@layer astro { ::view-transition-old(nav-explorers) { 
+	animation-duration: 180ms;
+	animation-timing-function: cubic-bezier(0.76, 0, 0.24, 1);
+	animation-fill-mode: both;
+	animation-name: astroFadeOut; }::view-transition-new(nav-explorers) { 
+	animation-duration: 180ms;
+	animation-timing-function: cubic-bezier(0.76, 0, 0.24, 1);
+	animation-fill-mode: both;
+	animation-name: astroFadeIn; }[data-astro-transition=back]::view-transition-old(nav-explorers) { 
+	animation-duration: 180ms;
+	animation-timing-function: cubic-bezier(0.76, 0, 0.24, 1);
+	animation-fill-mode: both;
+	animation-name: astroFadeOut; }[data-astro-transition=back]::view-transition-new(nav-explorers) { 
+	animation-duration: 180ms;
+	animation-timing-function: cubic-bezier(0.76, 0, 0.24, 1);
+	animation-fill-mode: both;
+	animation-name: astroFadeIn; } }[data-astro-transition-fallback="old"] [data-astro-transition-scope="astro-ss5qawsi-2"],
+			[data-astro-transition-fallback="old"][data-astro-transition-scope="astro-ss5qawsi-2"] { 
+	animation-duration: 180ms;
+	animation-timing-function: cubic-bezier(0.76, 0, 0.24, 1);
+	animation-fill-mode: both;
+	animation-name: astroFadeOut; }[data-astro-transition-fallback="new"] [data-astro-transition-scope="astro-ss5qawsi-2"],
+			[data-astro-transition-fallback="new"][data-astro-transition-scope="astro-ss5qawsi-2"] { 
+	animation-duration: 180ms;
+	animation-timing-function: cubic-bezier(0.76, 0, 0.24, 1);
+	animation-fill-mode: both;
+	animation-name: astroFadeIn; }[data-astro-transition=back][data-astro-transition-fallback="old"] [data-astro-transition-scope="astro-ss5qawsi-2"],
+			[data-astro-transition=back][data-astro-transition-fallback="old"][data-astro-transition-scope="astro-ss5qawsi-2"] { 
+	animation-duration: 180ms;
+	animation-timing-function: cubic-bezier(0.76, 0, 0.24, 1);
+	animation-fill-mode: both;
+	animation-name: astroFadeOut; }[data-astro-transition=back][data-astro-transition-fallback="new"] [data-astro-transition-scope="astro-ss5qawsi-2"],
+			[data-astro-transition=back][data-astro-transition-fallback="new"][data-astro-transition-scope="astro-ss5qawsi-2"] { 
+	animation-duration: 180ms;
+	animation-timing-function: cubic-bezier(0.76, 0, 0.24, 1);
+	animation-fill-mode: both;
+	animation-name: astroFadeIn; }</style><style>[data-astro-transition-scope="astro-ss5qawsi-3"] { view-transition-name: nav-adventurers; }@layer astro { ::view-transition-old(nav-adventurers) { 
+	animation-duration: 180ms;
+	animation-timing-function: cubic-bezier(0.76, 0, 0.24, 1);
+	animation-fill-mode: both;
+	animation-name: astroFadeOut; }::view-transition-new(nav-adventurers) { 
+	animation-duration: 180ms;
+	animation-timing-function: cubic-bezier(0.76, 0, 0.24, 1);
+	animation-fill-mode: both;
+	animation-name: astroFadeIn; }[data-astro-transition=back]::view-transition-old(nav-adventurers) { 
+	animation-duration: 180ms;
+	animation-timing-function: cubic-bezier(0.76, 0, 0.24, 1);
+	animation-fill-mode: both;
+	animation-name: astroFadeOut; }[data-astro-transition=back]::view-transition-new(nav-adventurers) { 
+	animation-duration: 180ms;
+	animation-timing-function: cubic-bezier(0.76, 0, 0.24, 1);
+	animation-fill-mode: both;
+	animation-name: astroFadeIn; } }[data-astro-transition-fallback="old"] [data-astro-transition-scope="astro-ss5qawsi-3"],
+			[data-astro-transition-fallback="old"][data-astro-transition-scope="astro-ss5qawsi-3"] { 
+	animation-duration: 180ms;
+	animation-timing-function: cubic-bezier(0.76, 0, 0.24, 1);
+	animation-fill-mode: both;
+	animation-name: astroFadeOut; }[data-astro-transition-fallback="new"] [data-astro-transition-scope="astro-ss5qawsi-3"],
+			[data-astro-transition-fallback="new"][data-astro-transition-scope="astro-ss5qawsi-3"] { 
+	animation-duration: 180ms;
+	animation-timing-function: cubic-bezier(0.76, 0, 0.24, 1);
+	animation-fill-mode: both;
+	animation-name: astroFadeIn; }[data-astro-transition=back][data-astro-transition-fallback="old"] [data-astro-transition-scope="astro-ss5qawsi-3"],
+			[data-astro-transition=back][data-astro-transition-fallback="old"][data-astro-transition-scope="astro-ss5qawsi-3"] { 
+	animation-duration: 180ms;
+	animation-timing-function: cubic-bezier(0.76, 0, 0.24, 1);
+	animation-fill-mode: both;
+	animation-name: astroFadeOut; }[data-astro-transition=back][data-astro-transition-fallback="new"] [data-astro-transition-scope="astro-ss5qawsi-3"],
+			[data-astro-transition=back][data-astro-transition-fallback="new"][data-astro-transition-scope="astro-ss5qawsi-3"] { 
+	animation-duration: 180ms;
+	animation-timing-function: cubic-bezier(0.76, 0, 0.24, 1);
+	animation-fill-mode: both;
+	animation-name: astroFadeIn; }</style><style>[data-astro-transition-scope="astro-ss5qawsi-4"] { view-transition-name: nav-builders; }@layer astro { ::view-transition-old(nav-builders) { 
+	animation-duration: 180ms;
+	animation-timing-function: cubic-bezier(0.76, 0, 0.24, 1);
+	animation-fill-mode: both;
+	animation-name: astroFadeOut; }::view-transition-new(nav-builders) { 
+	animation-duration: 180ms;
+	animation-timing-function: cubic-bezier(0.76, 0, 0.24, 1);
+	animation-fill-mode: both;
+	animation-name: astroFadeIn; }[data-astro-transition=back]::view-transition-old(nav-builders) { 
+	animation-duration: 180ms;
+	animation-timing-function: cubic-bezier(0.76, 0, 0.24, 1);
+	animation-fill-mode: both;
+	animation-name: astroFadeOut; }[data-astro-transition=back]::view-transition-new(nav-builders) { 
+	animation-duration: 180ms;
+	animation-timing-function: cubic-bezier(0.76, 0, 0.24, 1);
+	animation-fill-mode: both;
+	animation-name: astroFadeIn; } }[data-astro-transition-fallback="old"] [data-astro-transition-scope="astro-ss5qawsi-4"],
+			[data-astro-transition-fallback="old"][data-astro-transition-scope="astro-ss5qawsi-4"] { 
+	animation-duration: 180ms;
+	animation-timing-function: cubic-bezier(0.76, 0, 0.24, 1);
+	animation-fill-mode: both;
+	animation-name: astroFadeOut; }[data-astro-transition-fallback="new"] [data-astro-transition-scope="astro-ss5qawsi-4"],
+			[data-astro-transition-fallback="new"][data-astro-transition-scope="astro-ss5qawsi-4"] { 
+	animation-duration: 180ms;
+	animation-timing-function: cubic-bezier(0.76, 0, 0.24, 1);
+	animation-fill-mode: both;
+	animation-name: astroFadeIn; }[data-astro-transition=back][data-astro-transition-fallback="old"] [data-astro-transition-scope="astro-ss5qawsi-4"],
+			[data-astro-transition=back][data-astro-transition-fallback="old"][data-astro-transition-scope="astro-ss5qawsi-4"] { 
+	animation-duration: 180ms;
+	animation-timing-function: cubic-bezier(0.76, 0, 0.24, 1);
+	animation-fill-mode: both;
+	animation-name: astroFadeOut; }[data-astro-transition=back][data-astro-transition-fallback="new"] [data-astro-transition-scope="astro-ss5qawsi-4"],
+			[data-astro-transition=back][data-astro-transition-fallback="new"][data-astro-transition-scope="astro-ss5qawsi-4"] { 
+	animation-duration: 180ms;
+	animation-timing-function: cubic-bezier(0.76, 0, 0.24, 1);
+	animation-fill-mode: both;
+	animation-name: astroFadeIn; }</style><style>[data-astro-transition-scope="astro-ss5qawsi-5"] { view-transition-name: nav-challengers; }@layer astro { ::view-transition-old(nav-challengers) { 
+	animation-duration: 180ms;
+	animation-timing-function: cubic-bezier(0.76, 0, 0.24, 1);
+	animation-fill-mode: both;
+	animation-name: astroFadeOut; }::view-transition-new(nav-challengers) { 
+	animation-duration: 180ms;
+	animation-timing-function: cubic-bezier(0.76, 0, 0.24, 1);
+	animation-fill-mode: both;
+	animation-name: astroFadeIn; }[data-astro-transition=back]::view-transition-old(nav-challengers) { 
+	animation-duration: 180ms;
+	animation-timing-function: cubic-bezier(0.76, 0, 0.24, 1);
+	animation-fill-mode: both;
+	animation-name: astroFadeOut; }[data-astro-transition=back]::view-transition-new(nav-challengers) { 
+	animation-duration: 180ms;
+	animation-timing-function: cubic-bezier(0.76, 0, 0.24, 1);
+	animation-fill-mode: both;
+	animation-name: astroFadeIn; } }[data-astro-transition-fallback="old"] [data-astro-transition-scope="astro-ss5qawsi-5"],
+			[data-astro-transition-fallback="old"][data-astro-transition-scope="astro-ss5qawsi-5"] { 
+	animation-duration: 180ms;
+	animation-timing-function: cubic-bezier(0.76, 0, 0.24, 1);
+	animation-fill-mode: both;
+	animation-name: astroFadeOut; }[data-astro-transition-fallback="new"] [data-astro-transition-scope="astro-ss5qawsi-5"],
+			[data-astro-transition-fallback="new"][data-astro-transition-scope="astro-ss5qawsi-5"] { 
+	animation-duration: 180ms;
+	animation-timing-function: cubic-bezier(0.76, 0, 0.24, 1);
+	animation-fill-mode: both;
+	animation-name: astroFadeIn; }[data-astro-transition=back][data-astro-transition-fallback="old"] [data-astro-transition-scope="astro-ss5qawsi-5"],
+			[data-astro-transition=back][data-astro-transition-fallback="old"][data-astro-transition-scope="astro-ss5qawsi-5"] { 
+	animation-duration: 180ms;
+	animation-timing-function: cubic-bezier(0.76, 0, 0.24, 1);
+	animation-fill-mode: both;
+	animation-name: astroFadeOut; }[data-astro-transition=back][data-astro-transition-fallback="new"] [data-astro-transition-scope="astro-ss5qawsi-5"],
+			[data-astro-transition=back][data-astro-transition-fallback="new"][data-astro-transition-scope="astro-ss5qawsi-5"] { 
+	animation-duration: 180ms;
+	animation-timing-function: cubic-bezier(0.76, 0, 0.24, 1);
+	animation-fill-mode: both;
+	animation-name: astroFadeIn; }</style><style>[data-astro-transition-scope="astro-ss5qawsi-6"] { view-transition-name: nav-pioneers; }@layer astro { ::view-transition-old(nav-pioneers) { 
+	animation-duration: 180ms;
+	animation-timing-function: cubic-bezier(0.76, 0, 0.24, 1);
+	animation-fill-mode: both;
+	animation-name: astroFadeOut; }::view-transition-new(nav-pioneers) { 
+	animation-duration: 180ms;
+	animation-timing-function: cubic-bezier(0.76, 0, 0.24, 1);
+	animation-fill-mode: both;
+	animation-name: astroFadeIn; }[data-astro-transition=back]::view-transition-old(nav-pioneers) { 
+	animation-duration: 180ms;
+	animation-timing-function: cubic-bezier(0.76, 0, 0.24, 1);
+	animation-fill-mode: both;
+	animation-name: astroFadeOut; }[data-astro-transition=back]::view-transition-new(nav-pioneers) { 
+	animation-duration: 180ms;
+	animation-timing-function: cubic-bezier(0.76, 0, 0.24, 1);
+	animation-fill-mode: both;
+	animation-name: astroFadeIn; } }[data-astro-transition-fallback="old"] [data-astro-transition-scope="astro-ss5qawsi-6"],
+			[data-astro-transition-fallback="old"][data-astro-transition-scope="astro-ss5qawsi-6"] { 
+	animation-duration: 180ms;
+	animation-timing-function: cubic-bezier(0.76, 0, 0.24, 1);
+	animation-fill-mode: both;
+	animation-name: astroFadeOut; }[data-astro-transition-fallback="new"] [data-astro-transition-scope="astro-ss5qawsi-6"],
+			[data-astro-transition-fallback="new"][data-astro-transition-scope="astro-ss5qawsi-6"] { 
+	animation-duration: 180ms;
+	animation-timing-function: cubic-bezier(0.76, 0, 0.24, 1);
+	animation-fill-mode: both;
+	animation-name: astroFadeIn; }[data-astro-transition=back][data-astro-transition-fallback="old"] [data-astro-transition-scope="astro-ss5qawsi-6"],
+			[data-astro-transition=back][data-astro-transition-fallback="old"][data-astro-transition-scope="astro-ss5qawsi-6"] { 
+	animation-duration: 180ms;
+	animation-timing-function: cubic-bezier(0.76, 0, 0.24, 1);
+	animation-fill-mode: both;
+	animation-name: astroFadeOut; }[data-astro-transition=back][data-astro-transition-fallback="new"] [data-astro-transition-scope="astro-ss5qawsi-6"],
+			[data-astro-transition=back][data-astro-transition-fallback="new"][data-astro-transition-scope="astro-ss5qawsi-6"] { 
+	animation-duration: 180ms;
+	animation-timing-function: cubic-bezier(0.76, 0, 0.24, 1);
+	animation-fill-mode: both;
+	animation-name: astroFadeIn; }</style></head><body class="min-h-screen transition-colors duration-300"><header class="sticky top-0 z-50 header-blur border-b"><div class="container"><nav class="flex items-center justify-between gap-3 sm:gap-6 py-3"><div class="flex items-center gap-3"><a href="/challengers/" class="flex items-center gap-2 px-3 py-1.5 rounded-full bg-zinc-100 dark:bg-zinc-800 hover:bg-zinc-200 dark:hover:bg-zinc-700 text-zinc-600 dark:text-zinc-300 transition-all hover:-translate-x-1 group animate-in slide-in-from-left-4 fade-in duration-300"><span class="material-symbols-outlined text-xl group-hover:scale-110 transition-transform" aria-hidden="true">arrow_back</span><span class="text-sm font-bold hidden sm:inline">Back</span></a><a data-astro-transition-scope="astro-l25zdozq-1" href="/" class="flex items-center text-2xl font-black uppercase tracking-tighter hover:opacity-80 transition-opacity"><span class="text-indigo-600 dark:text-indigo-400">RL</span></a></div><div class="hidden lg:flex items-center gap-2"><a data-astro-transition-scope="astro-ss5qawsi-2" href="/explorers/" class="nav-btn transition-all duration-300 border flex-col !py-1.5 !px-3 border-pink-200 dark:border-pink-700 hover:scale-105 hover:bg-gradient-to-r from-pink-50 to-rose-50 dark:from-pink-900/50 dark:to-rose-900/50 bg-white dark:bg-zinc-900"><div class="flex items-center gap-1.5"><span class="material-symbols-outlined text-base text-pink-500 " aria-hidden="true">star</span><span class="font-semibold text-xs xl:text-sm text-pink-600 dark:text-pink-400">Explorers</span></div><span class="text-[10px] text-zinc-500 dark:text-zinc-400 leading-tight hidden xl:block">3-5 Years</span></a><a data-astro-transition-scope="astro-ss5qawsi-3" href="/adventurers/" class="nav-btn transition-all duration-300 border flex-col !py-1.5 !px-3 border-sky-200 dark:border-sky-700 hover:scale-105 hover:bg-gradient-to-r from-sky-50 to-cyan-50 dark:from-sky-900/50 dark:to-cyan-900/50 bg-white dark:bg-zinc-900"><div class="flex items-center gap-1.5"><span class="material-symbols-outlined text-base text-sky-500 " aria-hidden="true">rocket_launch</span><span class="font-semibold text-xs xl:text-sm text-sky-600 dark:text-sky-400">Adventurers</span></div><span class="text-[10px] text-zinc-500 dark:text-zinc-400 leading-tight hidden xl:block">6-8 Years</span></a><a data-astro-transition-scope="astro-ss5qawsi-4" href="/builders/" class="nav-btn transition-all duration-300 border flex-col !py-1.5 !px-3 border-green-200 dark:border-green-700 hover:scale-105 hover:bg-gradient-to-r from-green-50 to-emerald-50 dark:from-green-900/50 dark:to-emerald-900/50 bg-white dark:bg-zinc-900"><div class="flex items-center gap-1.5"><span class="material-symbols-outlined text-base text-green-500 " aria-hidden="true">build</span><span class="font-semibold text-xs xl:text-sm text-green-600 dark:text-green-400">Builders</span></div><span class="text-[10px] text-zinc-500 dark:text-zinc-400 leading-tight hidden xl:block">9-11 Years</span></a><a data-astro-transition-scope="astro-ss5qawsi-5" href="/challengers/" class="nav-btn transition-all duration-300 border flex-col !py-1.5 !px-3 border-violet-200 dark:border-violet-700 ring-violet-400 ring-2 scale-105 font-bold bg-gradient-to-r from-violet-50 to-purple-50 dark:from-violet-900/50 dark:to-purple-900/50"><div class="flex items-center gap-1.5"><span class="material-symbols-outlined text-base text-violet-500 animate-bounce-soft" aria-hidden="true">bolt</span><span class="font-semibold text-xs xl:text-sm text-violet-600 dark:text-violet-400">Challengers</span></div><span class="text-[10px] text-zinc-500 dark:text-zinc-400 leading-tight hidden xl:block">12-14 Years</span></a><a data-astro-transition-scope="astro-ss5qawsi-6" href="/pioneers/" class="nav-btn transition-all duration-300 border flex-col !py-1.5 !px-3 border-orange-200 dark:border-orange-700 hover:scale-105 hover:bg-gradient-to-r from-orange-50 to-amber-50 dark:from-orange-900/50 dark:to-amber-900/50 bg-white dark:bg-zinc-900"><div class="flex items-center gap-1.5"><span class="material-symbols-outlined text-base text-orange-500 " aria-hidden="true">flag</span><span class="font-semibold text-xs xl:text-sm text-orange-600 dark:text-orange-400">Pioneers</span></div><span class="text-[10px] text-zinc-500 dark:text-zinc-400 leading-tight hidden xl:block">15-16 Years</span></a></div><div class="flex items-center gap-2 sm:gap-3"><!-- Combined Stats Pill --><div class="flex items-center h-9 sm:h-11 rounded-full overflow-hidden shadow-lg shadow-rose-500/20 hover:scale-105 transition-transform cursor-default select-none"><!-- Love Section --><div class="flex items-center h-full gap-2 px-3 sm:px-4 bg-gradient-to-r from-rose-500 to-pink-500 text-white text-xs sm:text-sm font-semibold" title="Total Love"><span class="text-sm sm:text-lg">❤️</span><span id="love-count">0</span></div><!-- Streak Section --><div class="hidden sm:flex items-center h-full gap-2 px-4 bg-gradient-to-r from-amber-500 to-orange-500 text-white text-sm font-semibold" title="Day Streak"><span class="text-lg animate-pulse">🔥</span><span id="streak-count">0</span></div></div><button id="theme-toggle" class="w-9 h-9 sm:w-11 sm:h-11 rounded-xl flex items-center justify-center bg-zinc-100 dark:bg-zinc-900 border border-zinc-200 dark:border-zinc-700 hover:border-indigo-500 hover:scale-105 transition-all duration-200 cursor-pointer overflow-hidden relative" aria-label="Toggle theme" data-astro-cid-l6lhmie6><span class="theme-sun absolute transition-all duration-300" data-astro-cid-l6lhmie6><span class="material-symbols-outlined text-2xl" aria-hidden="true">light_mode</span></span><span class="theme-moon absolute transition-all duration-300 opacity-0 rotate-[-90deg] scale-50" data-astro-cid-l6lhmie6><span class="material-symbols-outlined text-2xl" aria-hidden="true">dark_mode</span></span></button><script>
+  function initThemeToggle() {
+    const toggle = document.getElementById('theme-toggle');
+    if (!toggle) return;
+
+    const html = document.documentElement;
+
+    const setTheme = (theme) => {
+      html.classList.toggle('dark', theme === 'dark');
+      localStorage.setItem('theme', theme);
+    };
+
+    // Clone to remove old listeners
+    const newToggle = toggle.cloneNode(true);
+    toggle.parentNode.replaceChild(newToggle, toggle);
+
+    newToggle.addEventListener('click', () => {
+      const newTheme = html.classList.contains('dark') ? 'light' : 'dark';
+      setTheme(newTheme);
+    });
+  }
+
+  // Handle both initial load and View Transitions
+  document.addEventListener('DOMContentLoaded', initThemeToggle);
+  document.addEventListener('astro:page-load', initThemeToggle);
+</script><!-- Settings Dropdown --><div class="relative group"><button id="settings-btn" class="w-9 h-9 sm:w-11 sm:h-11 rounded-xl flex items-center justify-center bg-zinc-100 dark:bg-zinc-900 border border-zinc-200 dark:border-zinc-700 hover:border-indigo-500 hover:scale-105 transition-all duration-200 cursor-pointer" aria-label="Settings"><span class="material-symbols-outlined text-xl" aria-hidden="true">settings</span></button><!-- Dropdown Menu --><div class="absolute right-0 top-full mt-2 w-48 bg-white dark:bg-zinc-900 rounded-xl shadow-xl border border-zinc-100 dark:border-zinc-800 p-2 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 transform origin-top-right scale-95 group-hover:scale-100 z-50"><button id="reset-btn" class="w-full flex items-center gap-2 px-3 py-2 text-sm font-medium text-rose-500 hover:bg-rose-50 dark:hover:bg-rose-900/20 rounded-lg transition-colors"><span class="material-symbols-outlined text-xl" aria-hidden="true">refresh</span>Reset Progress</button></div></div></div></nav></div></header><script>
+  function initNav() {
+    const loveCount = document.getElementById('love-count');
+    const streakCount = document.getElementById('streak-count');
+    const resetBtn = document.getElementById('reset-btn');
+
+    // Read from localStorage directly (nanostores persistent format)
+    const getProgress = () => {
+      try {
+        const completed = JSON.parse(localStorage.getItem('userProgress:completed') || '[]');
+        const streak = parseInt(localStorage.getItem('userProgress:streak') || '3');
+        return { completed, streak };
+      } catch {
+        return { completed: [], streak: 3 };
+      }
+    };
+
+    // Update UI
+    const updateUI = () => {
+      const progress = getProgress();
+      if (loveCount) {
+        // Each activity is worth 50 love
+        const score = progress.completed.length * 50;
+        loveCount.textContent = score.toString();
+      }
+      if (streakCount) {
+        streakCount.textContent = progress.streak.toString();
+      }
+    };
+
+    // Initial update
+    updateUI();
+
+    // Listen for storage changes (when other tabs or scripts update)
+    window.addEventListener('storage', updateUI);
+
+    // Also update on custom event (when activities are completed in the same tab)
+    window.addEventListener('progress-updated', updateUI);
+
+    // Reset Logic - clone to remove old listeners
+    if (resetBtn) {
+      const newResetBtn = resetBtn.cloneNode(true);
+      resetBtn.parentNode.replaceChild(newResetBtn, resetBtn);
+
+      newResetBtn.addEventListener('click', () => {
+        if (confirm('Are you sure you want to reset all progress? This cannot be undone.')) {
+          localStorage.setItem('userProgress:completed', '[]');
+          localStorage.setItem('userProgress:streak', '3');
+          localStorage.setItem('userProgress:unlocked', '["colors","colors-flashcards"]');
+          window.location.reload();
+        }
+      });
+    }
+  }
+
+  // Handle both initial load and View Transitions
+  document.addEventListener('DOMContentLoaded', initNav);
+  document.addEventListener('astro:page-load', initNav);
+</script><main class="min-h-screen py-8 pb-32 relative overflow-hidden bg-zinc-50 dark:bg-zinc-950" data-astro-cid-spqksqwp><!-- Blueprint background pattern --><div class="absolute inset-0 opacity-[0.03] pointer-events-none" style="background-image: linear-gradient(#000 1px, transparent 1px), linear-gradient(90deg, #000 1px, transparent 1px); background-size: 20px 20px;" data-astro-cid-spqksqwp></div><div class="container mx-auto px-4 relative max-w-5xl" data-astro-cid-spqksqwp><div class="game-container w-full" data-id="argument-architect" data-levels="[{&quot;title&quot;:&quot;Level 1: Basic Argument&quot;,&quot;topic&quot;:&quot;School Uniforms&quot;,&quot;prompt&quot;:&quot;Should schools require students to wear uniforms?&quot;,&quot;structure&quot;:[{&quot;id&quot;:&quot;s1&quot;,&quot;label&quot;:&quot;Main Claim&quot;,&quot;type&quot;:&quot;claim&quot;,&quot;hint&quot;:&quot;State your position clearly&quot;},{&quot;id&quot;:&quot;s2&quot;,&quot;label&quot;:&quot;Evidence&quot;,&quot;type&quot;:&quot;evidence&quot;,&quot;hint&quot;:&quot;Facts/data to support your claim&quot;},{&quot;id&quot;:&quot;s3&quot;,&quot;label&quot;:&quot;Reasoning&quot;,&quot;type&quot;:&quot;reasoning&quot;,&quot;hint&quot;:&quot;Explain how evidence supports claim&quot;}],&quot;blocks&quot;:[{&quot;id&quot;:&quot;b1&quot;,&quot;text&quot;:&quot;School uniforms improve student focus by removing fashion distractions.&quot;,&quot;type&quot;:&quot;claim&quot;},{&quot;id&quot;:&quot;b2&quot;,&quot;text&quot;:&quot;A 2018 study found that discipline referrals dropped by 12% after uniforms were introduced.&quot;,&quot;type&quot;:&quot;evidence&quot;},{&quot;id&quot;:&quot;b3&quot;,&quot;text&quot;:&quot;When students worry less about what they wear, they can concentrate more on learning.&quot;,&quot;type&quot;:&quot;reasoning&quot;},{&quot;id&quot;:&quot;b4&quot;,&quot;text&quot;:&quot;School uniforms possess an aesthetically pleasing symmetry.&quot;,&quot;type&quot;:&quot;claim&quot;,&quot;isDistractor&quot;:true},{&quot;id&quot;:&quot;b5&quot;,&quot;text&quot;:&quot;I like wearing blue shirts.&quot;,&quot;type&quot;:&quot;evidence&quot;,&quot;isDistractor&quot;:true}]},{&quot;title&quot;:&quot;Level 2: Strengthening Claims&quot;,&quot;topic&quot;:&quot;Digital Homework&quot;,&quot;prompt&quot;:&quot;Is digital homework better than paper homework?&quot;,&quot;structure&quot;:[{&quot;id&quot;:&quot;s1&quot;,&quot;label&quot;:&quot;Claim&quot;,&quot;type&quot;:&quot;claim&quot;,&quot;hint&quot;:&quot;Your main argument&quot;},{&quot;id&quot;:&quot;s2&quot;,&quot;label&quot;:&quot;Evidence 1&quot;,&quot;type&quot;:&quot;evidence&quot;,&quot;hint&quot;:&quot;First supporting fact&quot;},{&quot;id&quot;:&quot;s3&quot;,&quot;label&quot;:&quot;Reasoning&quot;,&quot;type&quot;:&quot;reasoning&quot;,&quot;hint&quot;:&quot;Connect evidence to claim&quot;},{&quot;id&quot;:&quot;s4&quot;,&quot;label&quot;:&quot;Evidence 2&quot;,&quot;type&quot;:&quot;evidence&quot;,&quot;hint&quot;:&quot;Second supporting fact&quot;}],&quot;blocks&quot;:[{&quot;id&quot;:&quot;b1&quot;,&quot;text&quot;:&quot;Digital homework platforms offer immediate feedback that helps students learn faster.&quot;,&quot;type&quot;:&quot;claim&quot;},{&quot;id&quot;:&quot;b2&quot;,&quot;text&quot;:&quot;Studies show students who receive instant corrections improve scores by 15%.&quot;,&quot;type&quot;:&quot;evidence&quot;},{&quot;id&quot;:&quot;b3&quot;,&quot;text&quot;:&quot;This immediate loop allows misconceptions to be corrected before they become habits.&quot;,&quot;type&quot;:&quot;reasoning&quot;},{&quot;id&quot;:&quot;b4&quot;,&quot;text&quot;:&quot;Digital tools also save 40% of teacher grading time, allowing more 1-on-1 instruction.&quot;,&quot;type&quot;:&quot;evidence&quot;},{&quot;id&quot;:&quot;b5&quot;,&quot;text&quot;:&quot;Paper homework is heavy to carry.&quot;,&quot;type&quot;:&quot;evidence&quot;,&quot;isDistractor&quot;:true},{&quot;id&quot;:&quot;b6&quot;,&quot;text&quot;:&quot;Computers use electricity.&quot;,&quot;type&quot;:&quot;reasoning&quot;,&quot;isDistractor&quot;:true}]},{&quot;title&quot;:&quot;Level 3: Counter-Arguments&quot;,&quot;topic&quot;:&quot;Space Exploration&quot;,&quot;prompt&quot;:&quot;Is space exploration worth the cost?&quot;,&quot;structure&quot;:[{&quot;id&quot;:&quot;s1&quot;,&quot;label&quot;:&quot;Claim&quot;,&quot;type&quot;:&quot;claim&quot;,&quot;hint&quot;:&quot;Your stance&quot;},{&quot;id&quot;:&quot;s2&quot;,&quot;label&quot;:&quot;Counterclaim&quot;,&quot;type&quot;:&quot;counterclaim&quot;,&quot;hint&quot;:&quot;What opponents say&quot;},{&quot;id&quot;:&quot;s3&quot;,&quot;label&quot;:&quot;Rebuttal&quot;,&quot;type&quot;:&quot;rebuttal&quot;,&quot;hint&quot;:&quot;Why they are wrong&quot;},{&quot;id&quot;:&quot;s4&quot;,&quot;label&quot;:&quot;Conclusion&quot;,&quot;type&quot;:&quot;reasoning&quot;,&quot;hint&quot;:&quot;Wrap up&quot;}],&quot;blocks&quot;:[{&quot;id&quot;:&quot;b1&quot;,&quot;text&quot;:&quot;Investment in space exploration yields technologies that solve problems on Earth.&quot;,&quot;type&quot;:&quot;claim&quot;},{&quot;id&quot;:&quot;b2&quot;,&quot;text&quot;:&quot;Critics argue that the billions spent on space should be used for poverty relief instead.&quot;,&quot;type&quot;:&quot;counterclaim&quot;},{&quot;id&quot;:&quot;b3&quot;,&quot;text&quot;:&quot;However, space tech has led to water purification and solar cells that directly aid developing nations.&quot;,&quot;type&quot;:&quot;rebuttal&quot;},{&quot;id&quot;:&quot;b4&quot;,&quot;text&quot;:&quot;Thus, the long-term benefits to humanity outweigh the initial financial costs.&quot;,&quot;type&quot;:&quot;reasoning&quot;},{&quot;id&quot;:&quot;b5&quot;,&quot;text&quot;:&quot;Space is very dark and cold.&quot;,&quot;type&quot;:&quot;counterclaim&quot;,&quot;isDistractor&quot;:true},{&quot;id&quot;:&quot;b6&quot;,&quot;text&quot;:&quot;Rockets are loud.&quot;,&quot;type&quot;:&quot;rebuttal&quot;,&quot;isDistractor&quot;:true}]}]" data-colors="{&quot;claim&quot;:&quot;bg-emerald-100 border-emerald-300 text-emerald-800 dark:bg-emerald-900/40 dark:border-emerald-700 dark:text-emerald-200&quot;,&quot;evidence&quot;:&quot;bg-blue-100 border-blue-300 text-blue-800 dark:bg-blue-900/40 dark:border-blue-700 dark:text-blue-200&quot;,&quot;reasoning&quot;:&quot;bg-violet-100 border-violet-300 text-violet-800 dark:bg-violet-900/40 dark:border-violet-700 dark:text-violet-200&quot;,&quot;counterclaim&quot;:&quot;bg-rose-100 border-rose-300 text-rose-800 dark:bg-rose-900/40 dark:border-rose-700 dark:text-rose-200&quot;,&quot;rebuttal&quot;:&quot;bg-amber-100 border-amber-300 text-amber-800 dark:bg-amber-900/40 dark:border-amber-700 dark:text-amber-200&quot;}" data-astro-cid-spqksqwp><!-- Header --><div class="flex flex-col md:flex-row items-center justify-between gap-4 mb-8" data-astro-cid-spqksqwp><div data-astro-cid-spqksqwp><div class="flex items-center gap-3 mb-2" data-astro-cid-spqksqwp><div class="p-2 bg-indigo-100 dark:bg-indigo-900/50 rounded-lg" data-astro-cid-spqksqwp><span class="material-symbols-outlined text-indigo-600 dark:text-indigo-400 text-3xl" data-astro-cid-spqksqwp>architecture</span></div><h1 class="text-3xl font-black text-zinc-800 dark:text-zinc-100 tracking-tight" data-astro-cid-spqksqwp>Argument Architect</h1></div><p class="text-zinc-600 dark:text-zinc-400 font-medium" data-astro-cid-spqksqwp>Build strong essays by structuring your arguments</p></div><div class="flex items-center gap-4 bg-white dark:bg-zinc-900 p-3 rounded-2xl shadow-sm border border-zinc-200 dark:border-zinc-800" data-astro-cid-spqksqwp><div class="text-center px-2" data-astro-cid-spqksqwp><p class="text-xs font-bold text-zinc-400 uppercase tracking-wider" data-astro-cid-spqksqwp>Level</p><p id="level-indicator" class="text-xl font-black text-indigo-600 dark:text-indigo-400" data-astro-cid-spqksqwp>1/3</p></div></div></div><!-- Game Area --><div class="grid grid-cols-1 lg:grid-cols-12 gap-8 h-full" data-astro-cid-spqksqwp><!-- Essay Structure (Drop Zone) --><div class="lg:col-span-8 order-2 lg:order-1" data-astro-cid-spqksqwp><div class="bg-white dark:bg-zinc-900 rounded-3xl p-6 shadow-xl border-2 border-zinc-200 dark:border-zinc-800 min-h-[500px] flex flex-col" data-astro-cid-spqksqwp><div class="border-b border-zinc-200 dark:border-zinc-800 pb-4 mb-6" data-astro-cid-spqksqwp><div class="flex justify-between items-center mb-2" data-astro-cid-spqksqwp><span class="px-3 py-1 rounded-full bg-zinc-100 dark:bg-zinc-800 text-zinc-600 dark:text-zinc-400 text-xs font-bold uppercase tracking-wider" data-astro-cid-spqksqwp>Prompt</span></div><h2 id="prompt-text" class="text-xl font-bold text-zinc-800 dark:text-zinc-100 leading-snug" data-astro-cid-spqksqwp>Loading prompt...</h2></div><div id="essay-paper" class="flex-1 space-y-4 bg-zinc-50 dark:bg-zinc-950/50 rounded-xl p-6 border border-zinc-200 dark:border-zinc-800 relative" data-astro-cid-spqksqwp><!-- Slots generated by JS --><div class="absolute inset-0 flex items-center justify-center opacity-10 pointer-events-none" data-astro-cid-spqksqwp><span class="material-symbols-outlined text-9xl" data-astro-cid-spqksqwp>article</span></div></div><!-- Action Bar --><div class="mt-6 flex justify-between items-center" data-astro-cid-spqksqwp><div id="feedback-area" class="text-sm font-medium" data-astro-cid-spqksqwp></div><button id="check-btn" class="px-6 py-3 bg-indigo-600 hover:bg-indigo-500 text-white rounded-xl font-bold shadow-lg shadow-indigo-500/20 transition-all active:scale-95 flex items-center gap-2" disabled data-astro-cid-spqksqwp><span data-astro-cid-spqksqwp>Check Blueprint</span><span class="material-symbols-outlined" data-astro-cid-spqksqwp>check_circle</span></button><button id="next-btn" class="hidden px-6 py-3 bg-emerald-500 hover:bg-emerald-400 text-white rounded-xl font-bold shadow-lg shadow-emerald-500/20 transition-all active:scale-95 flex items-center gap-2" data-astro-cid-spqksqwp><span data-astro-cid-spqksqwp>Next Level</span><span class="material-symbols-outlined" data-astro-cid-spqksqwp>arrow_forward</span></button></div></div></div><!-- Component Bank (Drag Source) --><div class="lg:col-span-4 order-1 lg:order-2" data-astro-cid-spqksqwp><div class="bg-zinc-100 dark:bg-zinc-900/50 rounded-3xl p-6 sticky top-6 h-fit border border-zinc-200 dark:border-zinc-800" data-astro-cid-spqksqwp><h3 class="text-sm font-bold text-zinc-500 dark:text-zinc-400 uppercase tracking-wider mb-4 flex items-center gap-2" data-astro-cid-spqksqwp><span class="material-symbols-outlined text-lg" data-astro-cid-spqksqwp>category</span>Building Blocks</h3><div id="blocks-bank" class="flex flex-col gap-3 min-h-[200px]" data-astro-cid-spqksqwp><!-- Blocks generated by JS --></div><div class="mt-6 pt-4 border-t border-zinc-200 dark:border-zinc-700/50" data-astro-cid-spqksqwp><h4 class="text-xs font-bold text-zinc-400 mb-2" data-astro-cid-spqksqwp>LEGEND</h4><div class="grid grid-cols-2 gap-2 text-[10px] font-bold uppercase tracking-wider" data-astro-cid-spqksqwp><div class="flex items-center gap-1.5" data-astro-cid-spqksqwp><div class="w-2 h-2 rounded-full bg-emerald-400" data-astro-cid-spqksqwp></div> Claim</div><div class="flex items-center gap-1.5" data-astro-cid-spqksqwp><div class="w-2 h-2 rounded-full bg-blue-400" data-astro-cid-spqksqwp></div> Evidence</div><div class="flex items-center gap-1.5" data-astro-cid-spqksqwp><div class="w-2 h-2 rounded-full bg-violet-400" data-astro-cid-spqksqwp></div> Reasoning</div><div class="flex items-center gap-1.5" data-astro-cid-spqksqwp><div class="w-2 h-2 rounded-full bg-rose-400" data-astro-cid-spqksqwp></div> Counter</div></div></div></div></div></div></div></div></main><script>
+      if ('serviceWorker' in navigator) {
+        // Unregister all service workers to prevent stale content issues
+        navigator.serviceWorker.getRegistrations().then((registrations) => {
+          for (const registration of registrations) {
+            registration.unregister();
+          }
+        });
+      }
+    </script></body></html><script type="module" src="/assets/argument-architect.astro_astro_type_script_index_0_lang.BLxC_ksa.js"></script>
